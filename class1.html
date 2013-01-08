@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Class 1 ~ HTML/CSS ~ Girl Develop IT</title>
+
+		<meta name="description" content="This is the official Girl Develop It Intermediate Core HTML/CSS curriculum. It was developed through the contributions of Julie Pagano, Jen Myers, Alexis Goldstein and Izzy Johnston.
+
+    The course is meant to be taught in 4 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+		<meta name="author" content="Girl Develop It">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/gdidefault.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
+
+		<!-- If use the PDF print sheet so students can print slides-->
+		
+		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			  <!-- Opening slide -->
+        <section>
+          <img src = "images/gdi_logo_badge.png">
+          <h3>Intermediate HTML and CSS</h3>
+          <h4>Class 1</h4>
+        </section>
+        
+        <!-- Welcome-->
+        <section>
+          <h3>Welcome!</h3>
+          <div class = "left-align">
+          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+          <p class ="green">Some "rules"</p>
+          <ul>
+            <li>We are here for you!</li>
+            <li>Every question is important</li>
+            <li>Help each other</li>
+            <li>Have fun</li>
+          </ul>
+          </div>
+        </section>
+        
+        <section>
+          <h3>Welcome!</h3>
+          <div class = "left-align">
+          <p class = "blue">Tell us about yourself.</p>
+          <ul>
+            <li>Who are you?</li>
+            <li>What do you hope to get out of the class?</li>
+            <li>What is your favorite dinosaur?</li>
+          </ul>
+          </div>
+        </section>
+        
+        <!-- Review Terms-->
+        <section>
+         <h3>Review: Terms</h3>
+         <ul>
+           <li>
+            <div class = "green">Web design</div>
+            <div>The process of planning, structuring and creating a website</div>
+           </li>
+           <li>
+            <div class = "green">Web development</div>
+            <div>The process of programming dynamic web applications</div>
+           </li>
+           <li>
+            <div class = "green">Front end</div>
+            <div>The outwardly visible elements of a website or application</div>
+           </li>
+           <li>
+            <div class = "green">Back end</div>
+            <div>The inner workings and functionality of a website or application.</div>
+           </li>
+         </ul>
+        </section>
+        
+        <!-- Review Tools -->
+        <section>
+          <h3>Review: Tools</h3>
+          <ul>
+            <li>
+              <div class = "yellow">Browser</div>
+              <div>Chrome</div>
+              <div>Firefox</div>
+             </li>
+             <li>
+              <div class = "yellow">Development Toolkit</div>
+              <div>Chrome - Inspector</div>
+              <div>Firefox - Firebug</div>
+             </li>
+             <li>
+              <div class = "yellow">Text Editor</div>
+              <div>TextWrangler - Mac</div>
+              <div>Notepad ++ - Windows</div>
+              <div>Sublime Text - Mac or Windows</div>
+             </li>
+          </ul>
+        </section>
+        
+        <!-- Review Roles of HTML v CSS -->
+        <section>
+          <h3>Review: Anatomy of a website</h3>
+          <div class = "blue"> Your Content</div>
+          <div><span class = "blue">+ HTML: </span>Structure</div>
+          <div><span class = "blue">+ CSS: </span>Presentation</div>
+          <div class = "blue">= Your Website</div>
+          <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
+        </section>
+        
+        <section>
+          <h3>Review: Anatomy of a website</h3>
+          <div class = "yellow"> Concrete example</div>
+          <ul>
+            <li class ="fragment"><p>A paragraph is your content</p></li>
+            <li class = "fragment">
+              <div style = "font-size: 80%">Putting your content into an HTML tag to make it look like a paragraph is Structure</div>
+              <pre><code class ="html">
+                &lt;p>A paragraph is your content&lt;/p>
+              </code></pre>
+          </li>
+          <li class = "fragment">
+            <div style = "font-size: 80%">Make the font of your paragraph blue and 18pt is presentation</div>
+            <p class ="blue">A paragraph is your content</p>
+          </li>
+        </section>
+        
+        <!-- Review HTML element-->
+        <section>
+         <h3>Review: Anatomy of an HTML element</h3>
+         <ul>
+           <li class = "fragment">
+             Element
+             <ul>
+               <li>An individual component of HTML</li>
+               <li>Paragraph, Table, List</li>
+              </ul>
+          </li>
+          <li class = "fragment">
+            Tag
+            <ul>
+              <li>Markers that signal the beginning and 
+               end of an element</li>
+               <li>Opening tag and Closing Tag
+<pre><code class ="html">
+ &lt;tagname>Stuff in the middle&lt;/tagname>
+</code></pre>
+              </li>
+               <li>
+<pre><code class ="html">
+ &lt;p> This is a sample paragraph.&lt;/p>
+</code></pre>
+              </li>
+            </ul>
+        </section>
+        
+        <section>
+         <h3>Review: Anatomy of an HTML element</h3>
+         <ul>
+           <li class = "fragment">
+             Container Element
+             <ul>
+               <li>An element that can contain other elements or 
+               content</li>
+               <li>A paragraph (&lt;p>) contains text</li>
+              </ul>
+          </li>
+          <li class = "fragment">
+            Stand Alone Element
+            <ul>
+              <li>An element that cannot contain anything else</li>
+              <li>
+<pre><code class = "html">
+ &lt;br/>
+ &lt;img/> 
+</code></pre>
+              </li>
+            </ul>
+        </section>
+        
+        <section>
+         <h3>Review: Anatomy of an HTML element</h3>
+         <ul>
+           <li class = "fragment">
+             Attribute
+             <ul>
+               <li>Each element can have a variety of attributes</li>
+               <li>Language, style, identity, source</li>
+              </ul>
+          </li>
+          <li class = "fragment">
+            Value
+            <ul>
+              <li>Value is the value assigned to a given 
+              attribute.</li>
+              <li>
+<pre><code class ="html">
+ &lt;p lang = "fr">C'est la vie&lt;/p>
+ &lt;img src = "my.picture.jpg"/> 
+</code></pre>
+              </li>
+            </ul>
+        </section>
+        
+        <!-- What is CSS-->
+        <section>
+          <h3>CSS: Review</h3>
+          <p>CSS = Cascading Style Sheets</p>
+          <p>CSS is a "style sheet language" that lets you style the elements on your page.</p>
+          <p>CSS is works in conjunction with HTML, but is not HTML itself.</p>
+        </section>
+
+
+        <!-- The CSS Rule-->
+        <section>
+          <h3>Review: The CSS Rule</h3>
+<pre><code class = "html">
+selector {
+  property: value;
+}
+</code></pre>
+          <div class = "left-align">
+            <p>A block of CSS code is a rule.</p>
+            <p>The rule starts with a selector.</p>
+            <p>It has sets of properties and values.</p>
+            <p>A property-value pair is a declaration.</p>
+          </div>
+        </section>
+
+        <!-- CSS Syntax -->
+        <section>
+          <h3>Review: CSS Syntax</h3>
+          <div class = "left-align">
+            <p>Declarations:  Property and value of style you plan use on HTML element. </p>
+          <p>Declarations end with a semicolon</p>
+          <p>Declaration groups are surrounded by curly brackets.</p>
+          </div>
+
+<pre><code class = "html">
+selector {
+  property: value;
+  property: value;
+  property: value;
+}
+</code></pre>
+        </section>
+
+        <!-- Selectors elements-->
+        <section>
+			  <h3>Review: Selector: Element</h3>
+<pre><code class = "html">
+p {
+  property: value;
+}
+</code></pre>
+      <p>Selects all paragraph elements.</p>
+<pre><code class = "html">
+img {
+  property: value;
+}
+</code></pre>
+        <p>Selects all image elements.</p>
+        </section>
+
+        <!-- Selectors ID-->
+        <section>
+			    <h3>Review: Selector: ID</h3>
+<pre><code class = "html">
+#footer {
+  property: value;
+}
+</code></pre>
+          <p>Selects all elements with an id of "footer".</p>
+
+<pre><code class = "html">
+&lt;p id="footer">Copyright 2011&lt;/p>
+</code></pre>
+         <p>The associated HTML.</p>
+			  </section>
+
+        <!-- Selectors Class-->
+        <section>
+			    <h3>Selector: Class</h3>
+<pre><code class = "html">
+.warning {
+  color: red;
+}
+</code></pre>
+          <p>Selects all elements with a class of "warning".</p>
+
+<pre><code class = "html">
+&lt;p class="warning">Run away!&lt;/p>
+</code></pre>
+         <p>The associated HTML.</p>
+			  </section>
+
+        <!-- Selector position-->
+        <section>
+        <h3>Review: Selector: Position</h3>
+<pre><code class = "html">
+p em {
+  color: yellow;
+}
+</code></pre>
+       <p>Selects all em elements that are within a paragraph</p>
+<pre><code class = "html">
+&lt;p>This is &lt;em>important.&lt;/em>&lt;/p>
+</code></pre>
+        <p>The associated HTML.</p>
+      </section>
+      
+      <!-- Standard practices-->
+      <section>
+        <h3>Standard Practices</h3>
+        <p>Awesome, right?</p>
+        <p> But how do people use this <span class = "green" style ="font-style:italic">REALLY?</span>
+        <ul>
+          <li class = "fragment">Reset CSS files</li>
+          <li class = "fragment">Standard widths and sizes</li>
+          <li class = "fragment">Wrappers</li>
+        </ul>  
+      </section>
+      
+      <!-- Reset CSS-->
+      <section>
+        <h3>Reset CSS</h3>
+        <p>Even though HTML is the structure and CSS is the design, some HTML elements have default styles</p>
+        <p class = "fragment">Examples include:</p>
+        <ul class = "fragment">
+          <li>Bulleted lists like this one have standard bullets</li>
+          <li>Paragraphs have default padding</li>
+          <li>Links are blue and underlined</li>
+        <ul>
+      </section>
+      
+      <section>
+        <h3>Reset CSS</h3>
+        <div>
+          Most elements:
+<pre><code class = "html">
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+</code></pre>
+        </div>
+        <div>
+          Lists:
+<pre><code class = "html">
+  list-style: none;
+</code></pre>          
+        </div>
+      </section>
+      
+      <!-- Sizes-->
+      <section>
+        <h3>Standard widths and sizes</h3>
+        <p>Some sizes that are good to know about</p>
+        <ul>
+          <li>A standard font size is usually 12px</li>
+          <li>
+            Screens vary greatly in width!
+            Standardize your design a couple ways
+            <ul>
+              <li>Set the body width to a specific width</li>
+              <li>Set the content area width to 100%, with max-width of around 1200px/1400px and a min-width of around 960px.
+            </ul>
+          </li>
+        </ul>
+      </section>
+      
+      <!-- Sizes-->
+      <section>
+        <h3>Wrappers</h3>
+        <p>Wrappers are a good way to center content if the screen width is wider than your content.</p>
+<pre><code class = "html">
+  .wrapper{
+      width: 100%;
+      max-width:1400px;
+      margin: 0 auto;
+  }
+</code></pre>
+      </section>
+      
+      <!-- Let's Develop It -->
+      <section>
+        <h3>Let's Develop It</h3>
+        <p class = "blue">Getting our feet wet</p>
+        <ul>
+          <li>Download practice files</li>
+          <li>Look through the page</li>
+          <li>Add a link to the reset.css file in the head of the document</li>
+          <li>Notice the changes to the layout</li>
+        </ul>
+      </section>
+      
+      <!-- Links-->
+      <section>
+        <h3>Linking on pages</h3>
+<pre><code class = "html">
+&lt;a href = "#section">Go to Section!&lt;/a>
+</code></pre>
+<pre><code class = "html">
+&lt;a name= "section">&lt;/a>
+</code></pre>
+      <p><a href = "http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors" target = "_blank">Example on Wikipedia</a>
+      </section>
+      
+      <!-- Pseudo selectors-->
+      <section>
+        <h3>Pseudo Selectors</h3>
+        <p>In addition to applying css to elements, classes and ids, you can apply css on certain events. Most notably, hover</p>
+<pre><code class = "html">
+.turn-blue:hover{
+  background-color: lightblue;
+  color: grey
+}
+</code></pre>  
+<pre><code class = "html">
+&lt;div class = "turn-blue">I will only turn blue on hover&lt;/div>
+</code></pre>      
+      <style>
+      .turn-blue:hover{
+        background-color: lightblue;
+        color: grey
+      }
+      </style>
+      <span class = "turn-blue">I will only turn blue on hover</span>
+      </section>
+      
+      <!-- Forms-->
+      <section>
+        <h3>Forms</h3>
+        <p>Haven't decided if this should be here</p>
+      </section>
+      
+      <!-- Let's Develop It-->
+      <section>
+        <h3>Let's Develop It</h3>
+        <p class = "blue">Use your new-found knowledge!</p>
+        <ul>
+          <li>Update the links in the header and footer to jump to the corresponding section</li>
+          <li>Update the links in the site to change color on hover. Try to update the background color too!</li>
+        </ul>
+      </section>
+        <!-- -->
+      <section>
+        <h2>Questions?</h2>
+        <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
+          <div class ="clear"></div></div>
+      </section>
+			</div>
+  		<footer>
+        <div class="copyright">
+          HTML/CSS ~ Girl Develop It ~
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+		</div>
+
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
