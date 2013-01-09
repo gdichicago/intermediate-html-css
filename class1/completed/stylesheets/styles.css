@@ -56,16 +56,16 @@ h4 {
 
 
 /* Navigation */
-.nav li {
+nav li {
   float: left;
 }
-.nav li a {
+nav li a {
   color: #fff;
   margin: 0 10px;
   padding: 5px 10px;
   text-decoration: none;
 }
-.nav li a:hover {
+nav li a:hover {
   color: #FB000D;
 }
 
@@ -90,28 +90,28 @@ h4 {
 
 
 /* Header */
-#header {
+header {
   background-color: #009D92;
   padding: 10px;
 }
-#header h1 {
+header h1 {
   color: #FFEECC;
   background: url('../images/icons/it.png') no-repeat 0 50%;
   padding-left: 40px;
 }
-#header .nav {
+header nav {
   float: right;
   font-size: 1.2em;
   margin-left: 20px;
 }
-#header .nav li {
+header nav li {
   line-height: 75px;
 }
-#header .nav a:hover {
+header nav a:hover {
   background-color: #fff;
 }
 
-#header:after {
+header:after {
   /* clearfix hack */
   content: "";
   display: table;
@@ -120,7 +120,7 @@ h4 {
 
 
 /* Main */
-#main div {
+#main section {
   margin-bottom: 1em;
   position: relative;
 }
@@ -140,7 +140,7 @@ h4 {
 
 
 /* Famous Women */
-#famous div.woman {
+#famous article.woman {
   background-color: white;
   float: left;
   min-height: 250px;
@@ -149,11 +149,11 @@ h4 {
   width: 27.33%;
 }
 
-#famous div.break {
+#famous article.break {
   clear: both;
 }
 
-#famous div img {
+#famous article img {
   display: block;
   margin: 1em auto;
   width: 100%;
@@ -220,21 +220,21 @@ h4 {
 
 
 /* Footer */
-#footer {
+footer {
   background-color: #00665F;
 }
 
-#footer .nav {
+footer .nav {
   float: left;
   font-size: 1.1em;
   margin: 10px;
 }
 
-#footer .nav a:hover {
+footer nav a:hover {
   color: #FFEECC;
 }
 
-#footer:after {
+footer:after {
   /* clearfix hack */
   content: "";
   display: table;
