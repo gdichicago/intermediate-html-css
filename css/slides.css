@@ -1,3 +1,6 @@
+/******************************
+* Class 1 Browser unordered list
+*******************************/
 /* line 9, source/slides.scss */
 li.chrome {
   list-style-image: url('../images/chrome.svg');
@@ -22,6 +25,10 @@ li.webkit {
 li.opera {
   list-style-image: url('../images/opera.svg');
 }
+
+/******************************
+* Class 1 HTML5 Features
+*******************************/
 .html5-features{
     margin:0;
 }
@@ -51,6 +58,10 @@ li.opera {
   width: 50px;
 }
 
+/******************************
+* Class 2 Attribute Selectors
+*******************************/
+
 /* line 44, source/slides.scss */
 .attribute-selectors article {
   font-size: 0.9em;
@@ -59,6 +70,7 @@ li.opera {
   overflow: hidden;
   *zoom: 1;
 }
+
 /* line 51, source/slides.scss */
 .attribute-selectors div {
   width: 200px;
@@ -79,6 +91,16 @@ li.opera {
 .attribute-selectors div[foo*="bar"] {
   border: solid 5px red;
 }
+.attribute-selectors a[href^="http://"] {
+  color: red;
+}
+.attribute-selectors img[src$=".jpg"] {
+  border: solid 5px red;
+}
+
+/******************************
+* Class 2 Nth-child pseudo-selectors
+*******************************/
 
 /* line 72, source/slides.scss */
 .nth-child table {
@@ -116,6 +138,7 @@ li.opera {
 }
 /* line 110, source/slides.scss */
 .reveal .nth-child-table th {
+  color: #333;
   background-color: #CCC;
   font-weight: bold;
 }
@@ -127,19 +150,40 @@ li.opera {
   width: 14%;
 }
 
+/******************************
+* Class 2 Pseudo-Enabled
+*******************************/
+.pseudo-enabled .example{
+  line-height: 46px;
+}
+.pseudo-enabled input{
+  height: 30px;
+  width: 250px;
+  vertical-align: middle;
+  line-height: 30px;
+  font-size: 0.8em;
+}
 /* line 124, source/slides.scss */
 .pseudo-enabled input:enabled {
-  background-color: red;
+  background-color: green;
 }
 /* line 128, source/slides.scss */
 .pseudo-enabled input:disabled {
   background-color: grey;
 }
 
+/******************************
+* Class 2 Pseudo-Checked
+*******************************/
+
 /* line 134, source/slides.scss */
 .pseudo-checked input:checked + label {
   color: red;
 }
+
+/******************************
+* Class 2 Border Raidus
+*******************************/
 
 /* line 139, source/slides.scss */
 .border-radius {
@@ -205,6 +249,10 @@ li.opera {
   width: 200px;
 }
 
+/******************************
+* Class 2 RGBA
+*******************************/
+
 /* line 192, source/slides.scss */
 article.rgba-opacity {
   font-size: 16px;
@@ -223,7 +271,8 @@ article.rgba-opacity div {
   line-height: 50px;
   margin: 10px;
   text-align: center;
-  width: 325px;
+  width: 45%;
+  font-size: 0.8em;
 }
 /* line 207, source/slides.scss */
 article.rgba-opacity .opacity {
@@ -281,6 +330,9 @@ article.rgba-opacity .example5.rgba {
   background-color: rgba(255, 0, 0, 0);
 }
 
+/******************************
+* Class 2 Box Shadows
+*******************************/
 /* line 225, source/slides.scss */
 .box-shadow div {
   border: solid 2px black;
@@ -300,6 +352,10 @@ article.rgba-opacity .example5.rgba {
   -moz-box-shadow: 0 0 1px 1px red;
   box-shadow: 0 0 1px 1px red;
 }
+
+/******************************
+* Class 2 Text Shadows
+*******************************/
 
 /* line 242, source/slides.scss */
 article.text-shadow {
@@ -334,6 +390,10 @@ article.text-shadow .example2 {
   margin: 0 auto;
   width: 700px;
 }
+
+/******************************
+* Class 2 Gradients
+*******************************/
 
 /* line 274, source/slides.scss */
 article.gradients {
@@ -379,6 +439,28 @@ article.gradients .linear-example3 {
   background-image: -o-linear-gradient(bottom right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
   background-image: linear-gradient(bottom right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
 }
+
+article.gradients .linear-example4 {
+  background-image: -webkit-linear-gradient(#ff0000, #ffffff);
+  background-image: -moz-linear-gradient(#ff0000, #ffffff);
+  background-image: -o-linear-gradient(#ff0000, #ffffff);
+  background-image: linear-gradient(#ff0000, #ffffff);
+}
+
+article.gradients .linear-example5 {
+  background-image: -webkit-linear-gradient(right, #ff0000, #ffffff);
+  background-image: -moz-linear-gradient(right, #ff0000, #ffffff);
+  background-image: -o-linear-gradient(right, #ff0000, #ffffff);
+  background-image: linear-gradient(right, #ff0000, #ffffff);
+}
+
+article.gradients .linear-example6 {
+  background-image: -webkit-linear-gradient(bottom right, #ff0000, #ffffff);
+  background-image: -moz-linear-gradient(bottom right, #ff0000, #ffffff);
+  background-image: -o-linear-gradient(bottom right, #ff0000, #ffffff);
+  background-image: linear-gradient(bottom right, #ff0000, #ffffff);
+}
+
 /* line 305, source/slides.scss */
 article.gradients .radial-example1 {
   background-image: -webkit-gradient(radial, circle cover, 0, circle cover, 100, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
@@ -403,6 +485,31 @@ article.gradients .radial-example3 {
   background-image: -o-radial-gradient(0 50%, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
   background-image: radial-gradient(0 50%, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
 }
+
+article.gradients .radial-example4 {
+  background-image: -webkit-radial-gradient(circle cover, #ff0000, #ffffff);
+  background-image: -moz-radial-gradient(circle cover, #ff0000, #ffffff);
+  background-image: -o-radial-gradient(circle cover, #ff0000, #ffffff);
+  background-image: radial-gradient(circle cover, #ff0000, #ffffff);
+}
+
+article.gradients .radial-example5 {
+  background-image: -webkit-radial-gradient(0 0, circle, #ff0000, #ffffff);
+  background-image: -moz-radial-gradient(0 0, circle, #ff0000, #ffffff);
+  background-image: -o-radial-gradient(0 0, circle, #ff0000, #ffffff);
+  background-image: radial-gradient(0 0, circle, #ff0000, #ffffff);
+}
+
+article.gradients .radial-example6 {
+  background-image: -webkit-radial-gradient(0 50%, circle, #ff0000, #ffffff);
+  background-image: -moz-radial-gradient(0 50%, circle, #ff0000, #ffffff);
+  background-image: -o-radial-gradient(0 50%, circle, #ff0000, #ffffff);
+  background-image: radial-gradient(0 50%, circle, #ff0000, #ffffff);
+}
+
+/******************************
+* Class 2 Transitions
+*******************************/
 
 /* line 324, source/slides.scss */
 .transition-duration .example {
@@ -593,6 +700,9 @@ article.gradients .radial-example3 {
   -o-transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
   transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
 }
+/******************************
+* Class 2 Gradients
+*******************************/
 
 /* line 451, source/slides.scss */
 article.transform-scale {
@@ -607,12 +717,13 @@ article.transform-scale div {
   background-color: #cccccc;
   border: solid 2px #000;
   float: left;
-  font-size: 18px;
+  font-size: 0.4em;
   height: 100px;
   line-height: 100px;
   margin: 0 35px;
   text-align: center;
   width: 100px;
+  color: #333;
 }
 /* line 470, source/slides.scss */
 article.transform-scale .example1:hover {
@@ -664,12 +775,13 @@ article.transform-rotate div {
   background-color: #cccccc;
   border: solid 2px black;
   float: left;
-  font-size: 16px;
+  font-size: 0.4em;
   height: 120px;
   line-height: 120px;
   margin: 0 25px;
   text-align: center;
   width: 120px;
+  color: #333;
 }
 /* line 510, source/slides.scss */
 article.transform-rotate .example1:hover {
@@ -717,12 +829,13 @@ article.transform-translate div {
   background-color: #cccccc;
   border: solid 2px black;
   float: left;
-  font-size: 16px;
+  font-size: 0.4em;
   height: 120px;
   line-height: 120px;
   margin: 0 25px;
   text-align: center;
   width: 170px;
+  color: #333;
 }
 /* line 544, source/slides.scss */
 article.transform-translate .example1:hover {
@@ -762,12 +875,13 @@ article.transform-origin div {
   background-color: #cccccc;
   border: solid 2px black;
   float: left;
-  font-size: 14px;
+  font-size: 0.3em;
   height: 120px;
   line-height: 120px;
   margin: 0 20px;
   text-align: center;
   width: 180px;
+  color: #333;
 }
 /* line 574, source/slides.scss */
 article.transform-origin div:hover {

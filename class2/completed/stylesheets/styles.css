@@ -17,6 +17,10 @@ p {
 a {
   color: #1D766F;
   text-decoration: none;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 a:hover {
   color: #BC2F36;
@@ -27,6 +31,7 @@ h1 {
   font-size: 2.2em;
   float: left;
   line-height: 75px;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.25);
 }
 
 h2 {
@@ -56,16 +61,17 @@ h4 {
 
 
 /* Navigation */
-.nav li {
+nav li {
   float: left;
 }
-.nav li a {
+nav li a {
   color: #fff;
   margin: 0 10px;
   padding: 5px 10px;
   text-decoration: none;
 }
-.nav li a:hover {
+nav li a:hover {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   color: #FB000D;
 }
 
@@ -90,28 +96,31 @@ h4 {
 
 
 /* Header */
-#header {
+header {
   background-color: #009D92;
   padding: 10px;
 }
-#header h1 {
+header h1 {
   color: #FFEECC;
   background: url('../images/icons/it.png') no-repeat 0 50%;
   padding-left: 40px;
 }
-#header .nav {
+header nav {
   float: right;
   font-size: 1.2em;
   margin-left: 20px;
 }
-#header .nav li {
+header nav li {
   line-height: 75px;
 }
-#header .nav a:hover {
+header nav a {
+  border-radius: 6px;
+}
+header nav a:hover {
   background-color: #fff;
 }
 
-#header:after {
+header:after {
   /* clearfix hack */
   content: "";
   display: table;
@@ -120,10 +129,16 @@ h4 {
 
 
 /* Main */
-#main div {
+#main section {
   margin-bottom: 1em;
   position: relative;
 }
+#main div.wrapper{
+    width: 100%;
+    max-width:1400px;
+    margin: 0 auto;
+}
+
 
 #main section:after {
   /* clearfix hack */
@@ -134,23 +149,42 @@ h4 {
 
 
 /* Famous Women */
-#famous div {
+#famous h2 {
+  text-shadow: 1px 1px 2px #009D92;
+}
+#famous article.woman {
   background-color: white;
   float: left;
   min-height: 250px;
   margin: 1%;
+  opacity: 0.8;
   padding: 2%;
   width: 27.33%;
 }
 
-#famous div.break {
+#famous article:hover {
+  opacity: 1;
+}
+
+#famous article:nth-child(4n) {
   clear: both;
 }
 
-#famous div img {
+#famous article img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #000;
   display: block;
   margin: 1em auto;
   width: 100%;
+}
+#famous article img:hover {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
 }
 
 
@@ -158,6 +192,10 @@ h4 {
 #organizations {
   clear: both;
   height: 500px;
+}
+
+#organizations h2 {
+  text-shadow: 1px 1px 2px #FB000D;
 }
 
 #organizations ul {
@@ -176,22 +214,35 @@ h4 {
   content: '6';
   font-family: 'EntypoRegular';
   font-size: 40px;
+  opacity: 0.5;
   padding-right: 10px;
+  text-shadow: 0px 0px 2px #888;
+}
+#organizations ul li:hover:before {
+  opacity: 1;
 }
 
 #organizations img {
+  border-radius: 20px;
   position: absolute;
   right: 20px;
   top: 0;
-  display: none;
   max-width: 40%;
+  opacity: 0;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  transition: opacity 1s;
 }
 #organizations li:hover img {
-  display: block;
+  opacity: 1;
 }
 
 
 /* Fun Facts */
+#facts h2 {
+  text-shadow: 1px 1px 2px #FFA700;
+}
 #facts ul {
   margin: 50px;
 }
@@ -200,6 +251,14 @@ h4 {
   line-height: 1.3em;
   margin-bottom: 1em;
   padding-left: 5px;
+
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  transition: background-color 1s;
+}
+#facts ul li:hover {
+  background-color: #fff;
+  border-radius: 10px;
 }
 #facts ul li:before {
   color: #FFA700;
@@ -207,6 +266,7 @@ h4 {
   font-family: 'EntypoRegular';
   font-size: 30px;
   padding-right: 10px;
+  text-shadow: 1px 1px 1px #CCC;
 }
 #facts ul li:hover:before {
   color: #FF6F00;
@@ -214,21 +274,24 @@ h4 {
 
 
 /* Footer */
-#footer {
-  background-color: #00665F;
+footer {
+  background-image: -webkit-linear-gradient(#00665F, #1D766F, #00665F);
+  background-image: -moz-linear-gradient(#00665F, #1D766F, #00665F);
+  background-image: linear-gradient(#00665F, #1D766F, #00665F);
 }
 
-#footer .nav {
+footer nav {
   float: left;
   font-size: 1.1em;
   margin: 10px;
 }
 
-#footer .nav a:hover {
+footer nav a:hover {
+  box-shadow: none;
   color: #FFEECC;
 }
 
-#footer:after {
+footer:after {
   /* clearfix hack */
   content: "";
   display: table;
