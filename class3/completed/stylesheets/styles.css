@@ -133,6 +133,12 @@ header:after {
   margin-bottom: 1em;
   position: relative;
 }
+#main div.wrapper{
+    width: 100%;
+    max-width:1400px;
+    margin: 0 auto;
+}
+
 
 #main section:after {
   /* clearfix hack */
@@ -146,7 +152,7 @@ header:after {
 #famous h2 {
   text-shadow: 1px 1px 2px #009D92;
 }
-#famous article {
+#famous article.woman {
   background-color: white;
   float: left;
   min-height: 250px;
