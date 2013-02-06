@@ -24,7 +24,7 @@
     <!-- For the slides -->
     <link rel="stylesheet" href="css/slides.css">
 
-    
+
     <!-- If use the PDF print sheet so students can print slides-->
     <link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
 
@@ -41,7 +41,7 @@
     <div class="slides">
       <!-- Opening slide -->
       <section>
-        <img src = "images/gdi_logo_badge.png">
+        <img src="images/gdi_logo_badge.png" alt=""/>
         <h3>Intermediate HTML and CSS</h3>
         <h4>Class 3</h4>
       </section>
@@ -49,9 +49,9 @@
       <!-- Welcome-->
       <section>
         <h3>Welcome!</h3>
-        <div class = "left-align">
+        <div class="left-align">
           <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
+          <p class="green">Some "rules"</p>
           <ul>
             <li>We are here for you!</li>
             <li>Every question is important</li>
@@ -60,7 +60,8 @@
           </ul>
         </div>
       </section>
-      
+
+      <!-- Media Queries -->
       <section>
         <section>
           <h2>Media Queries</h2>
@@ -70,14 +71,10 @@
             <li>Called via a meta tag</li>
           </ul>
         </section>
-        
         <section>
           <h2>Media Queries</h2>
-          <p>A media type and at least one expression that limits the style
-              sheets' scope by using media features, such as width, height,
-              and color</p>
+          <p>A media type and at least one expression that limits the style sheets' scope by using media features, such as width, height, and color</p>
         </section>
-        
         <section class="media-queries">
           <h2>Media Queries</h2>
           <div class="example"></div>
@@ -90,43 +87,40 @@ background-color: red;
 {
 background-color: blue;
 }</code></pre>
-
           <pre class="fragment"><code>&lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;</code></pre>
         </section>
-        
         <section>
           <h2>Media Queries</h2>
           <p>Frequently used in responsive web design</p>
-          <p><a href = "http://mediaqueri.es" target = "_blank">http://mediaqueri.es</a></p>
-          <p><a href="http://buildresponsively.com/" target = "_blank">Example: Build Responsively</a></p>
+          <p><a href="http://mediaqueri.es" target="_blank">http://mediaqueri.es</a></p>
+          <p><a href="http://buildresponsively.com/" target="_blank">Example: Build Responsively</a></p>
         </section>
       </section>
 
+      <!-- Responsive Design -->
       <section>
         <section>
           <h2>Responsive Design</h2>
           <p>Design by thinking of the structure of your website, and how different elements fit into the structure.</p>
         </section>
-        
         <section>
           <h2>Responsive Design</h2>
-          <p class ="yellow">Desktop View</p>
-          <img src = "images/media-queries-desktop.png" style = "height:500px"/>
+          <p class="yellow">Desktop View</p>
+          <img src="images/media-queries-desktop.png" style="height:500px" alt=""/>
         </section>
-        
         <section>
           <h2>Responsive Design</h2>
-          <p class ="yellow">Tablet View</p>
-          <img src = "images/media-queries-tablet.png" style = "height:500px"/>
+          <p class="yellow">Tablet View</p>
+          <img src="images/media-queries-tablet.png" style="height:500px" alt=""/>
         </section>
-        
         <section>
           <h2>Responsive Design</h2>
-          <p class ="yellow">Mobile View</p>
-          <img src = "images/media-queries-phone.png" style = "height:500px"/>
+          <p class="yellow">Mobile View</p>
+          <img src="images/media-queries-phone.png" style="height:500px" alt=""/>
         </section>
       </section>
-      
+
+      <!-- Responsive design + media queries -->
       <section>
         <section>
           <h2>Responsive Design and Media Queries</h2>
@@ -136,9 +130,8 @@ background-color: blue;
         </section>
         <section>
           <h2>Responsive Design and Media Queries</h2>
-          <p class = "yellow">Tablet example</p>
-          <pre><code contenteditable>
-/** Tablet view **/
+          <p class="yellow">Tablet example</p>
+          <pre><code contenteditable>/** Tablet view **/
 @media screen and (max-width: 960px){
   h1 {
     font-size: 1.1em;
@@ -147,15 +140,13 @@ background-color: blue;
   header nav li{
     line-height: 40px;
   }
-}
-          </code></pre>
-          <p class = "fragment">In tablet view, we don't need the header to be so big</p>
+}</code></pre>
+          <p class="fragment">In tablet view, we don't need the header to be so big</p>
         </section>
         <section>
           <h2>Responsive Design and Media Queries</h2>
-          <p class = "yellow">Mobile example</p>
-          <pre><code contenteditable>
-/** Mobile view **/
+          <p class="yellow">Mobile example</p>
+          <pre><code contenteditable>/** Mobile view **/
 @media screen and (max-width: 480px){
   #famous article.woman {
     float: none;
@@ -163,18 +154,16 @@ background-color: blue;
     padding: 2%;
     width: 80%
   }
-}
-          </code></pre>
-          <p class = "fragment">In mobile view, we don't want the bios to float</p>
+}</code></pre>
+          <p class="fragment">In mobile view, we don't want the bios to float</p>
         </section>
       </section>
-      
+
       <!-- Let's Develop It-->
       <section>
         <section>
           <h2>Let's Develop It</h2>
-          <p>Enhance our
-            Women in Computing web site to use HTML5 &amp; CSS3</p>
+          <p>Enhance our Women in Computing web site to use HTML5 &amp; CSS3</p>
         </section>
         <section>
           <h2>Let's Develop It</h2>
@@ -182,102 +171,96 @@ background-color: blue;
             <li>Use media queries to make our site responsive</li>
             <li>Start small</li>
             <li>You will have a little bit more time than normal</li>
-            <li>Useful tutorial <a href = "http://webdesignerwall.com/tutorials/css3-media-queries" target ="_blank">CSS3 and Media Queries</a></li>
-            <li>Useful tutorial <a href = "http://webdesignerwall.com/tutorials/responsive-design-in-3-steps" target ="_blank">Responsive Design in 3 Easy Steps</a></li>
+            <li>Useful tutorial <a href="http://webdesignerwall.com/tutorials/css3-media-queries" target="_blank">CSS3 and Media Queries</a></li>
+            <li>Useful tutorial <a href="http://webdesignerwall.com/tutorials/responsive-design-in-3-steps" target="_blank">Responsive Design in 3 Easy Steps</a></li>
           </ul>
         </section>
       </section>
-      
+
+      <!-- Tools and Deployment -->
       <section>
-         <section>
-           <h2>Tools &amp; Deployment</h2>
-           <p class = "yellow">Remember that HTML5 is still new</p>
-           <p>That means we have to be aware of what each browser can do</p>
-           <p>And make sure that people don't lose functionality</p>
-         </section>
-         <section>
-           <h2><a href="http://caniuse.com/" target ="_blank">Can I Use?</a></h2>
-           <img src="images/screenshots/caniuse-border-radius.png"/>
-         </section>
-         <section>
-           <h2><a href="http://html5readiness.com/" target ="_blank">HTML5 &amp; CSS3 Readiness</a></h2>
-           <img src="images/screenshots/html5-css3-readiness.png"/>
-         </section>
-         <section>
-           <h2><a href="http://html5please.com/" target ="_blank">HTML5 Please</a></h2>
-           <img src="images/screenshots/html5-please.png"/>
-         </section>
-         <section>
-           <img src="images/html5rocks.png"/>
-           <p>
-             <a href="http://www.html5rocks.com" target ="_blank">http://www.html5rocks.com</a>
-           </p>
-         </section>
+        <section>
+          <h2>Tools &amp; Deployment</h2>
+          <p class="yellow">Remember that HTML5 is still new</p>
+          <p>That means we have to be aware of what each browser can do</p>
+          <p>And make sure that people don't lose functionality</p>
+        </section>
+        <section>
+          <h2><a href="http://caniuse.com/" target="_blank">Can I Use?</a></h2>
+          <img src="images/screenshots/caniuse-border-radius.png" alt=""/>
+        </section>
+        <section>
+          <h2><a href="http://html5readiness.com/" target="_blank">HTML5 &amp; CSS3 Readiness</a></h2>
+          <img src="images/screenshots/html5-css3-readiness.png" alt=""/>
+        </section>
+        <section>
+          <h2><a href="http://html5please.com/" target="_blank">HTML5 Please</a></h2>
+          <img src="images/screenshots/html5-please.png" alt=""/>
+        </section>
+        <section>
+          <img src="images/html5rocks.png" alt=""/>
+          <p>
+            <a href="http://www.html5rocks.com" target="_blank">http://www.html5rocks.com</a>
+          </p>
+        </section>
+        <section>
+          <img src="images/Mozilla-Developer-Network.png" alt=""/>
+          <p>
+            <a href="https://developer.mozilla.org" target="_blank">https://developer.mozilla.org</a>
+          </p>
+        </section>
+        <section>
+          <img src="images/html5doctor.png" alt=""/>
+          <p>
+            <a href="http://html5doctor.com" target="_blank">http://html5doctor.com</a>
+          </p>
+        </section>
+        <section>
+          <h2>
+            <a href="http://code.google.com/p/html5shiv/" target="_blank">HTML5Shiv</a>
+          </h2>
+          <p>HTML5 IE enabling script</p>
+        </section>
+        <section>
+          <a href="http://modernizr.com/" target="_blank">
+            <img src="images/modernizr.png" alt=""/>
+          </a>
+          <ul>
+            <li>JavaScript library that detects HTML5 and CSS3 features in the user’s browser</li>
+            <li>Works well with polyfills - a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively</li>
+            <li>A lot of the code is in JavaScript, but you can look here for how <a href="http://modernizr.com/docs/#features-css" target="_blank" >Modernizr helps with CSS</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>
+            <a href="http://html5boilerplate.com/" target="_blank">
+              <img src="images/html5-boilerplate.png" alt=""/>
+            </a>
+          </h2>
+          <ul>
+            <li>Boilerplate to help you get started</li>
+            <li>
+              Includes:
+              <ul>
+                <li>jQuery</li>
+                <li>Modernizr</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>
+            <a href="http://www.initializr.com/" target="_blank">
+              <img src="images/initializr.png" alt=""/>
+            </a>
+          </h2>
+          <ul>
+            <li>HTML5 templates generator to help you get started with a new project based on HTML5 Boilerplate</li>
+            <li>It generates for you a clean customizable template with just what you need to start!</li>
+          </ul>
+        </section>
+      </section>
 
-         <section>
-           <img src="images/Mozilla-Developer-Network.png"/>
-           <p>
-             <a href="https://developer.mozilla.org" target ="_blank">https://developer.mozilla.org</a>
-           </p>
-         </section>
-
-         <section>
-           <img src="images/html5doctor.png"/>
-           <p>
-             <a href="http://html5doctor.com" target ="_blank">http://html5doctor.com</a>
-           </p>
-         </section>
-         <section>
-           <h2>
-             <a href="http://code.google.com/p/html5shiv/" target ="_blank">HTML5Shiv</a>
-           </h2>
-           <p>HTML5 IE enabling script</p>
-         </section>
-         <section>
-           <a href="http://modernizr.com/" target ="_blank">
-             <img src="images/modernizr.png"/>
-           </a>
-           <ul>
-             <li>JavaScript library that detects HTML5 and CSS3 features in the
-               user’s browser</li>
-             <li>Works well with polyfills - a piece of code (or plugin) that
-               provides the technology that you, the developer, expect the
-               browser to provide natively</li>
-             <li>A lot of the code is in JavaScript, but you can look here for how <a href = "http://modernizr.com/docs/#features-css" target = "_blank" >Modernizr helps with CSS</a></li>
-           </ul>
-         </section>
-         <section>
-           <h2>
-             <a href="http://html5boilerplate.com/" target ="_blank">
-               <img src="images/html5-boilerplate.png" />
-             </a>
-           </h2>
-           <ul>
-             <li>Boilerplate to help you get started</li>
-             <li>
-               Includes:
-               <ul>
-                 <li>jQuery</li>
-                 <li>Modernizr</li>
-               </ul>
-             </li>
-           </ul>
-         </section>
-         <section>
-           <h2>
-             <a href="http://www.initializr.com/" target ="_blank">
-               <img src="images/initializr.png" />
-             </a>
-           </h2>
-           <ul>
-             <li>HTML5 templates generator to help you get started with a
-               new project based on HTML5 Boilerplate</li>
-             <li>It generates for you a clean customizable template with just
-               what you need to start!</li>
-           </ul>
-         </section>
-       </section>
-       
       <!-- Let's Develop It-->
       <section>
         <section>
@@ -287,7 +270,7 @@ background-color: blue;
             <li>
               Stuck or want something new?
               <ul>
-                <li>Use <a href = "http://www.initializr.com/" target = "_blank">Initializr</a> to create your own blank template</li>
+                <li>Use <a href="http://www.initializr.com/" target="_blank">Initializr</a> to create your own blank template</li>
                 <li>Look at the structure of the HTML and CSS to learn new ways of building a site structure</li>
                 <li>Use all your knowledge from the past classes to begin building something uniquely yours!</li>
               </ul>
@@ -295,11 +278,11 @@ background-color: blue;
           </ul>
         </section>
       </section>
-      <!-- -->
+
+      <!-- Questions? -->
       <section>
         <h2>Questions?</h2>
-        <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
-          <div class ="clear"></div>
+        <div style="font-size:1000%; height:100%; margin-top:20%" class="blue">?
         </div>
       </section>
     </div>
@@ -314,7 +297,7 @@ background-color: blue;
 
   <script src="reveal/lib/js/head.min.js"></script>
   <script src="reveal/js/reveal.min.js"></script>
-  <script src ="js/jquery-1.8.2.min.js"></script>
+  <script src="js/jquery-1.8.2.min.js"></script>
   <script src="js/slides.js"></script>
 
     <script>
