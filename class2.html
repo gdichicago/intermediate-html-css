@@ -24,7 +24,7 @@
     <!-- For the slides -->
     <link rel="stylesheet" href="css/slides.css">
 
-    
+
     <!-- If use the PDF print sheet so students can print slides-->
     <link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
 
@@ -41,7 +41,7 @@
     <div class="slides">
     <!-- Opening slide -->
     <section>
-      <img src = "images/gdi_logo_badge.png">
+      <img src="images/gdi_logo_badge.png" alt="">
       <h3>Intermediate HTML and CSS</h3>
       <h4>Class 2</h4>
     </section>
@@ -49,9 +49,9 @@
       <!-- Welcome-->
       <section>
         <h3>Welcome!</h3>
-        <div class = "left-align">
+        <div class="left-align">
           <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
+          <p class="green">Some "rules"</p>
           <ul>
             <li>We are here for you!</li>
             <li>Every question is important</li>
@@ -60,16 +60,13 @@
           </ul>
         </div>
       </section>
-      
       <section>
-        <img src="images/css3.svg"/>
+        <img src="images/css3.svg" alt=""/>
       </section>
-
       <section>
         <h2>CSS3 Background</h2>
         <ul>
-          <li>Series of modules that are designed to be implemented separately
-            and independently from each other</li>
+          <li>Series of modules that are designed to be implemented separately and independently from each other</li>
           <li>Enhances display and interactions</li>
         </ul>
       </section>
@@ -84,16 +81,14 @@
           <h2>Attribute Selectors</h2>
           <p>Not just classes and ids any more!</p>
           <ul>
-            <li class = "fragment"><strong>E[foo^="bar"]</strong> <br/>an element whose "foo" attribute value begins exactly with the string "bar"</li>
-            <li class = "fragment"><strong>E[foo$="bar"]</strong> <br/>an element whose "foo" attribute value ends exactly with the string "bar"</li>
-            <li class = "fragment"><strong>E[foo*="bar"]</strong> <br/>an element whose "foo" attribute value contains the substring "bar"</li>
+            <li class="fragment"><strong>E[foo^="bar"]</strong> <br/>an element whose "foo" attribute value begins exactly with the string "bar"</li>
+            <li class="fragment"><strong>E[foo$="bar"]</strong> <br/>an element whose "foo" attribute value ends exactly with the string "bar"</li>
+            <li class="fragment"><strong>E[foo*="bar"]</strong> <br/>an element whose "foo" attribute value contains the substring "bar"</li>
           </ul>
         </section>
-
         <section class="attribute-selectors">
           <h2>Attribute Selectors</h2>
-          <pre><code>
-div[foo^="bar"] {
+          <pre><code>div[foo^="bar"] {
   color: red;
 }
 div[foo$="bar"] {
@@ -101,29 +96,25 @@ div[foo$="bar"] {
 }
 div[foo*="bar"] {
   border: solid 5px red;
-}
-          </code></pre>
+}</code></pre>
           <article>
             <div foo="barley">foo="barley"</div>
             <div foo="lumbar">foo="lumbar"</div>
             <div foo="embark">foo="embark"</div>
           </article>
         </section>
-        
         <section class="attribute-selectors">
           <h2>Attribute Selectors</h2>
           <p>People don't actually use foo do they?</p>
-          <pre><code>
-a[href^="http://"] {
+          <pre><code>a[href^="http://"] {
   color: red;
 }
 img[src$=".jpg"] {
   border: solid 5px red;
-}
-          </code></pre>
+}</code></pre>
           <article>
-            <a href ="http://www.girldevelopit.com" target = "_blank">http://www.girldevelopit.com</a>
-            <img src ="images/dinosaur.jpg" title ="dinosaur"/>
+            <a href="http://www.girldevelopit.com" target="_blank">http://www.girldevelopit.com</a>
+            <img src="images/dinosaur.jpg" title="dinosaur" alt="" style="float:right;"/>
           </article>
         </section>
       </section>
@@ -132,10 +123,10 @@ img[src$=".jpg"] {
       <section>
         <section>
           <h2>:nth-child pseudo-class selector</h2>
-          <p class = "yellow fragment" style = "font-size: 1.2em">Say WHAT???</p>
-          <p class = "fragment">Ever want to style a table so that every other row was a different color?</p>
-          <p class = "fragment">Or have a gallery of images so that each row is 3 images wide?</p>
-          <p class = "fragment">:nth-child pseudo-class is "nerd" for style every 2nd, 3rd, 4th ... nth element</p>
+          <p class="yellow fragment" style="font-size: 1.2em">Say WHAT???</p>
+          <p class="fragment">Ever want to style a table so that every other row was a different color?</p>
+          <p class="fragment">Or have a gallery of images so that each row is 3 images wide?</p>
+          <p class="fragment">:nth-child pseudo-class is used to style every 2nd, 3rd, 4th, or "nth" element</p>
         </section>
         <section>
           <h2>:nth-child pseudo-class selector</h2>
@@ -151,12 +142,9 @@ element:nth-child(an + b) { style properties }
             <li><strong>odd</strong> - selects odd elements</li>
           </ul>
         </section>
-
         <section class="nth-child-table">
           <h2>:nth-child</h2>
-          <pre><code>
-tbody tr:nth-child(an + b) { backround-color: red; }
-          </code></pre>
+          <pre><code>tbody tr:nth-child(an + b) { backround-color: red; }</code></pre>
           <p>
             <input type="text" id="nth-child-value" value="" />
             <input type="button" value="change"/>
@@ -202,7 +190,7 @@ tbody tr:nth-child(an + b) { backround-color: red; }
               </tr>
             </tbody>
           </table>
-          <a href="http://css-tricks.com/how-nth-child-works/" target ="_blank">reference</a>
+          <a href="http://css-tricks.com/how-nth-child-works/" target="_blank">reference</a>
         </section>
       </section>
 
@@ -211,21 +199,20 @@ tbody tr:nth-child(an + b) { backround-color: red; }
         <section>
           <h2>Some other pseudo-class Selectors</h2>
           <ul>
-            <li class ="fragment">
+            <li class="fragment">
               <strong>E:last-child</strong><br/> an element, last child of its parent
             </li>
-            <li class = "fragment">
+            <li class="fragment">
               <strong>E:only-child</strong><br/> an element, only child of its parent
             </li>
-            <li class = "fragment">
+            <li class="fragment">
               <strong>E:empty</strong><br/> an element that has no children (including text nodes)
             </li>
-            <li class = "fragment">
+            <li class="fragment">
               <strong>E:not</strong><br/> an element that does not match simple selector
             </li>
           </ul>
         </section>
-
         <section class="pseudo-enabled">
           <h2>:enabled &amp; :disabled</h2>
           <p>You can style form elements that are disabled and enabled</p>
@@ -234,16 +221,15 @@ input:enabled { background-color: green; }
 
 input:disabled { background-color: grey; }
           </code></pre>
-          <div class ="example">Enabled: <input type="text"/></div>
-          <div class ="example">Disabled: <input type="text" disabled/></div>
+          <div class="example">Enabled: <input type="text"/></div>
+          <div class="example">Disabled: <input type="text" disabled/></div>
         </section>
-
         <section class="pseudo-checked">
           <h2>:checked</h2>
           <p>You can style checkboxes and radio buttons when they are selected</p>
           <pre><code>
 input:checked + label {
-color: red;
+  color: red;
 }
           </code></pre>
           <p>
@@ -267,29 +253,26 @@ color: red;
       <section data-state="activity">
         <section>
           <h2>Let's Develop It!</h2>
-          <p>Enhance our Women in Computing web site to use HTML5 &amp CSS3</p>
+          <p>Enhance our Women in Computing web site to use HTML5 &amp; CSS3</p>
         </section>
-
         <section>
           <h2>Use a pseudo-selector</h2>
           <p>We need to clear every 4th famous woman</p>
-          <p>Previously, this was done by manually adding a
-            <strong>break</strong> class to every 4th element</p>
-          <img src="images/screenshots/famous-break.png"/>
+          <p>Previously, this was done by manually adding a <strong>break</strong> class to every 4th element</p>
+          <img src="images/screenshots/famous-break.png" alt=""/>
           <p>Replace this with an <strong>:nth-child</strong> selector</p>
         </section>
-
         <section>
           <h2>Example solutions</h2>
           <p>Make the rows of women three long</p>
           <pre><code>
 #famous article:nth-child(4n) {
-clear: both;
+  clear: both;
 }
           </code></pre>
           <pre><code>
 #famous div:nth-child(4n) {
-clear: both;
+  clear: both;
 }
           </code></pre>
         </section>
@@ -304,16 +287,15 @@ clear: both;
         </section>
         <section>
           <h2>Vendor Prefixes</h2>
-          <a href="http://caniuse.com/#feat=border-radius" target = "_blank">
-            <img src="images/screenshots/caniuse-border-radius.png">
+          <a href="http://caniuse.com/#feat=border-radius" target="_blank">
+            <img src="images/screenshots/caniuse-border-radius.png" alt="">
           </a>
         </section>
         <section>
           <h2>Vendor Prefixes</h2>
           <ul>
             <li>Flags it as a work-in-progress</li>
-            <li>When finished, the browser should support the non-prefixed
-              name</li>
+            <li>When finished, the browser should support the non-prefixed name</li>
           </ul>
         </section>
         <section>
@@ -332,9 +314,9 @@ clear: both;
           <pre><code>
 .example{
   -moz-property: value;
--ms-property: value;
+  -ms-property: value;
   -webkit-property: value;
--o-property: value;
+  -o-property: value;
   property: value;
 }
           </code></pre>
@@ -356,88 +338,76 @@ clear: both;
           <h2>border-radius</h2>
           <p>Allows you to create rounded corners</p>
         </section>
-
         <section class="border-radius">
           <h2>border-radius</h2>
           <pre><code>
-#example1 { border-radius: <span class="border-radius-value">20</span>px; }
+#example1 { border-radius: 20px; }
           </code></pre>
-          <p>
-            <span>
+          <div class="sliders" style="width:55%;">
+            <p>
               <span class="border-radius-value">20</span>px on all corners
-            </span>
-            <input type="range" min="0" max="100" value="20">
-          </p>
-
-          <article>
-            <div class="example example1">
-            </div>
-          </article>
+              <input type="range" min="0" max="100" value="20">
+            </p>
+          </div>
+          <div class="example" id="example1">
+          </div>
         </section>
-
         <section class="border-radius">
           <h2>border-radius</h2>
           <pre><code>
-#example2 { border-radius: <span class="border-radius-value">10</span>px <span class="border-radius-value">40</span>px; }
+#example2 { border-radius: 10px 40px; }
           </code></pre>
-          <p>
-            <span class="border-radius-value">10</span>px on top left & bottom right</span>
-            <input type="range" min="0" max="100" value="10">
-          </p>
-          <p>
-            <span><span class="border-radius-value">40</span>px on top right & bottom left</span>
-            <input type="range" min="0" max="100" value="40">
-          </p>
-          <article>
-            <div class="example example2">
-            </div>
-          </article>
+          <div class="sliders" style="width:75%;">
+            <p>
+              <span class="border-radius-value">10</span>px on top left &amp; bottom right
+              <input type="range" min="0" max="100" value="10">
+            </p>
+            <p>
+              <span class="border-radius-value">40</span>px on top right &amp; bottom left
+              <input type="range" min="0" max="100" value="40">
+            </p>
+          </div>
+          <div class="example" id="example2">
+          </div>
         </section>
-
         <section class="border-radius">
           <h2>border-radius</h2>
-          <pre><code>
-#example3 { border-radius: <span class="border-radius-value">10</span>px <span class="border-radius-value">20</span>px <span class="border-radius-value">40</span>px <span class="border-radius-value">80</span>px; }
-          </code></pre>
-          <p>
-            <span><span class="border-radius-value">10</span>px on top left</span>
-            <input type="range" min="0" max="100" value="10">
-          </p>
-          <p>
-            <span><span class="border-radius-value">20</span>px top right</span>
-            <input type="range" min="0" max="100" value="20">
-          </p>
-          <p>
-            <span><span class="border-radius-value">40</span>px bottom right</span>
-            <input type="range" min="0" max="100" value="40">
-          </p>
-          <p>
-            <span><span class="border-radius-value">80</span>px bottom left</span>
-            <input type="range" min="0" max="100" value="80">
-          </p>
-          <article>
-            <div class="example example3">
-            </div>
-          </article>
+          <pre><code>#example3 { border-radius: 10px 20px 40px 80px; }</code></pre>
+          <div class="sliders" style="width: 50%;">
+            <p>
+              <span class="border-radius-value">10</span>px on top left
+              <input type="range" min="0" max="100" value="10">
+            </p>
+            <p>
+              <span class="border-radius-value">20</span>px top right
+              <input type="range" min="0" max="100" value="20">
+            </p>
+            <p>
+              <span class="border-radius-value">40</span>px bottom right
+              <input type="range" min="0" max="100" value="40">
+            </p>
+            <p>
+              <span class="border-radius-value">80</span>px bottom left
+              <input type="range" min="0" max="100" value="80">
+            </p>
+          </div>
+          <div class="example" id="example3">
+          </div>
         </section>
-
         <section>
           <h2>border-radius</h2>
-          <pre><code>
-#example4 {
+          <pre><code>#example4, #example5 {
   border-radius: 50%;
-}
-          </code></pre>
+}</code></pre>
           <p>Creates an ellipse</p>
           <p>Creates a circle if height == width</p>
           <article class="border-radius">
-            <div class="example4">
+            <div class="example" id="example4">
             </div>
-            <div class="example5">
+            <div class="example" id="example5">
             </div>
           </article>
         </section>
-        
         <section>
           <h2>Border-Radius</h2>
           <p>Remember vendor prefixes? This is where we would use one</p>
@@ -455,12 +425,11 @@ clear: both;
       <section>
         <section>
           <h2>rgba colors &amp; opacity</h2>
-          <p>In CSS, we can choose colors with hexadecimal <span style ="color: #00ff00">#00ff00</span> or <span style ="color: rgb(0, 2255, 0)">rgb(0, 255, 0)</span></p>
+          <p>In CSS, we can choose colors with hexadecimal <span style="color: #00ff00">#00ff00</span> or <span style="color: rgb(0, 2255, 0)">rgb(0, 255, 0)</span></p>
           <p>In CSS3, there are ways to control opacity of a color too!</p>
           <ul>
             <li><strong>rgba</strong> - control the opacity of a color</li>
-            <li><strong>opacity</strong> - control the opacity of an
-              element</li>
+            <li><strong>opacity</strong> - control the opacity of an element</li>
           </ul>
         </section>
         <section>
@@ -564,7 +533,6 @@ clear: both;
           </p>
           <div></div>
         </section>
-
         <section class="example2">
           <h2>box-shadow</h2>
           <p>box-shadow: offset-x offset-y blur spread color</p>
@@ -584,13 +552,11 @@ clear: both;
           <div></div>
         </section>
       </section>
-      
+
       <!--Text Shadow-->
       <section>
-        <section>
-          <h2>text-shadow</h2>
-          <pre><code>
-#example1 { text-shadow: 2px 2px 10px red; }
+        <h2>text-shadow</h2>
+        <pre><code>#example1 { text-shadow: 2px 2px 10px red; }
 
 #example2 {
 text-shadow: 1px 1px 10px red,
@@ -599,20 +565,18 @@ text-shadow: 1px 1px 10px red,
             20px 20px 10px green,
             25px 25px 10px blue,
             30px 30px 10px purple;
-}
-          </code></pre>
-          <article class="text-shadow">
-            <div class="example1">lorem ipsum</div>
-            <div class="example2">lorem ipsum</div>
-          </article>
-        </section>
+}</code></pre>
+        <article class="text-shadow">
+          <div class="example1">lorem ipsum</div>
+          <div class="example2">lorem ipsum</div>
+        </article>
       </section>
 
       <!-- Gradients-->
       <section>
         <section>
           <h2>gradients</h2>
-          <p>Build gradients with css</p>
+          <p>Build gradients with CSS</p>
         </section>
         <section>
           <h2>linear gradients</h2>
@@ -696,32 +660,28 @@ background-image(linear-gradient(bottom right, red, white));
         </section>
         <section>
           <h2>gradients</h2>
-          <a href="http://www.colorzilla.com/gradient-editor/" target ="_blank">Gradient Editor</a>
+          <a href="http://www.colorzilla.com/gradient-editor/" target="_blank">Gradient Editor</a>
         </section>
       </section>
 
       <!-- Buttons-->
       <section>
-        <section>
-          <h2>Example: CSS3 Buttons</h2>
-          <a href="http://hellohappy.org/css3-buttons/" target ="_blank">
-            <img src="images/screenshots/css3-buttons.png" />
-          </a>
-        </section>
+        <h2>Example: CSS3 Buttons</h2>
+        <a href="http://hellohappy.org/css3-buttons/" target="_blank">
+          <img src="images/screenshots/css3-buttons.png" alt=""/>
+        </a>
       </section>
 
       <!-- Backgrounds-->
       <section class="multiple-backgrounds">
-        <section>
-          <h2>backgrounds</h2>
-          <p>CSS3 allows multiple background images</p>
-          <pre><code>.example {
+        <h2>backgrounds</h2>
+        <p>CSS3 allows multiple background images</p>
+        <pre><code>.example {
 background-image: url('../images/html5-features.png'),
-                  url('../images/sky.jpg');
+                url('../images/sky.jpg');
 }</code></pre>
-          <div>
-          </div>
-        </section>
+        <div class="example">
+        </div>
       </section>
 
       <!-- Caution-->
@@ -738,14 +698,11 @@ background-image: url('../images/html5-features.png'),
         </section>
         <section>
           <h2>Enhance the site using CSS3 properties</h2>
-          <p>
-            <ul>
-              <li>Tackle one small problem at a time</li>
-              <li>You have 10-15 minutes to get started</li>
-              <li>You won't be able to change everything - if we have time, you
-              can continue at the end of the workshop</li>
-            </ul>
-          </p>
+          <ul>
+            <li>Tackle one small problem at a time</li>
+            <li>You have 10-15 minutes to get started</li>
+            <li>You won't be able to change everything - if we have time, you can continue at the end of the workshop</li>
+          </ul>
         </section>
         <section>
           <h2>Suggestions</h2>
@@ -765,14 +722,13 @@ background-image: url('../images/html5-features.png'),
       <section>
         <section>
           <h2>Transitions</h2>
-          <p>Allow property changes in CSS values to occur smoothly over a
-              specified duration</p>
+          <p>Allow property changes in CSS values to occur smoothly over a specified duration</p>
           <p class="fragment">Create some awesome effects without any JavaScript</p>
         </section>
         <section>
           <h2>Transition Triggers</h2>
           <ul>
-            <li><strong>Hover</strong></li>
+            <li>Hover</li>
             <li>Mouse click</li>
             <li>Focus state</li>
             <li>Active state</li>
@@ -802,29 +758,27 @@ background-image: url('../images/html5-features.png'),
         <section>
           <h2>transition-property</h2>
           <p>
-            <a href="http://leaverou.github.com/animatable/" target ="_blank">animatable examples</a>
+            <a href="http://leaverou.github.com/animatable/" target="_blank">animatable examples</a>
           </p>
           <p>
-            <a href="http://www.w3.org/TR/css3-transitions/#animatable-css" target ="_blank">full list of supported properties</a>
+            <a href="http://www.w3.org/TR/css3-transitions/#animatable-css" target="_blank">full list of supported properties</a>
           </p>
         </section>
-
         <section class="transition-duration">
           <h2>transition-duration</h2>
           <p>the number of seconds or milliseconds a transition animation should take to complete</p>
           <pre><code>
 .example1 { transition-duration: 2s; }
           </code></pre>
-          <p>
-            <span class="value">2</span>s duration
-            <input type="range" min="0" max="10" value="3">
-          </p>
-          <article>
-            <div class="example">
-            </div>
-          </article>
+          <div class="sliders" style="width:40%;">
+            <p>
+              <span class="value">2</span>s duration
+              <input type="range" min="0" max="10" value="3">
+            </p>
+          </div>
+          <div class="example">
+          </div>
         </section>
-
         <section class="transition-delay">
           <h2>transition-delay</h2>
           <p>delay transitions from the moment a trigger happens</p>
@@ -839,7 +793,6 @@ background-image: url('../images/html5-features.png'),
             <div class="example1">0</div>
           </article>
         </section>
-
         <section class="transition-timing-function">
           <h2>transition-timing-function</h2>
           <p>determines how intermediate values are calculated</p>
@@ -852,10 +805,10 @@ background-image: url('../images/html5-features.png'),
             <div class="ease-in-out">ease-in-out</div>
             <div class="cubic-bezier">cubic-bezier</div>
           </article>
-          <a href="http://cubic-bezier.com/" target ="_blank">cubic-bezier</a>
+          <a href="http://cubic-bezier.com/" target="_blank">cubic-bezier</a>
         </section>
       </section>
-      
+
       <!-- Transformations-->
       <section>
         <section>
@@ -944,7 +897,7 @@ background-image: url('../images/html5-features.png'),
         </section>
         <section>
           <h2>3D transforms</h2>
-          <a href="http://desandro.github.com/3dtransforms/" target ="_blank">examples</a>
+          <a href="http://desandro.github.com/3dtransforms/" target="_blank">examples</a>
         </section>
       </section>
 
@@ -956,25 +909,23 @@ background-image: url('../images/html5-features.png'),
         </section>
         <section>
           <h2>Animations</h2>
-          <p>
-            <h4>Two Components</h4>
-            <ol>
-              <li>style describing the CSS animation</li>
-              <li>a set of keyframes that indicate the start and end states of
-                the animation's style</li>
-            </ol>
-          </p>
+          <h4>Two Components</h4>
+          <ol>
+            <li>style describing the CSS animation</li>
+            <li>a set of keyframes that indicate the start and end states of the animation's style</li>
+          </ol>
         </section>
         <section>
           <h2>Animations</h2>
-          <a href="http://leaverou.github.com/animatable/" target ="_blank">animatable</a>
-          <pre><code>
-@-webkit-keyframes background-color{
-from{background-color:slategray}
-to{background-color:black}
+          <a href="http://leaverou.github.com/animatable/" target="_blank">animatable</a>
+          <pre><code>@-webkit-keyframes background-color{
+  from { background-color: slategray }
+  to { background-color: black }
 }
-#background-color { -webkit-animation: background-color 1s infinite alternate;background-color:slategray}
-          </code></pre>
+#background-color {
+  -webkit-animation: background-color 1s infinite alternate;
+  background-color: slategray
+}</code></pre>
         </section>
         <section>
           <h2>Benefits of CSS3 Animations</h2>
@@ -985,13 +936,12 @@ to{background-color:black}
           </ul>
         </section>
       </section>
-      
+
       <!-- Let's Develop It -->
       <section data-state="activity">
         <section>
           <h2>Let's Develop It!</h2>
-          <p>Enhance our
-            Women in Computing web site to use HTML5 &amp; CSS3</p>
+          <p>Enhance our Women in Computing web site to use HTML5 &amp; CSS3</p>
         </section>
         <section>
           <h2>Continue enhancing the site using HTML5 &amp; CSS3</h2>
@@ -1002,23 +952,22 @@ to{background-color:black}
             <li>Continue enhancing using CSS3</li>
           </ul>
         </section>
-
         <section>
           <h2>Suggestions</h2>
           <ul>
-            <li>Add transitions the navigation links</li>
+            <li>Add transitions to the navigation links</li>
             <li>Rotate the famous women images on hover</li>
-            <li>Add transitions the jump arrows</li>
+            <li>Add transitions to the jump arrows</li>
             <li>Add transitions to the organization images on hover</li>
             <li>Add a gradient to the footer background</li>
           </ul>
-        </section>  
+        </section>
       </section>
-      <!-- -->
+
+      <!-- Questions? -->
       <section>
         <h2>Questions?</h2>
-        <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
-          <div class ="clear"></div>
+        <div style="font-size:1000%; height:100%; margin-top:20%" class="blue">?
         </div>
       </section>
     </div>
@@ -1033,7 +982,7 @@ to{background-color:black}
 
   <script src="reveal/lib/js/head.min.js"></script>
   <script src="reveal/js/reveal.min.js"></script>
-  <script src ="js/jquery-1.8.2.min.js"></script>
+  <script src="js/jquery-1.8.2.min.js"></script>
   <script src="js/slides.js"></script>
 
     <script>
