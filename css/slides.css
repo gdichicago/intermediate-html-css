@@ -2,6 +2,14 @@ div.sliders {
   text-align: right;
   margin: 0 auto;
 }
+pre.massive {
+  width: auto !important;
+}
+pre.massive code {
+  width: 900px;
+  max-height: 500px;
+  font-size:90%;
+}
 
 /******************************
 * Class 1 Browser unordered list
