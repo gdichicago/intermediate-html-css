@@ -187,11 +187,11 @@
           <h2>Microdata Structure</h2>
           <p class="yellow">Itemprop</p>
           <pre><code contenteditable>
-&lt;div itemscope itemtype="http://schema.org/Organization">
-  &lt;span itemprop="name">L'Amourita Pizza&lt;/span>
-  Located at 123 Main St, Albuquerque, NM.
-  Phone: &lt;span itemprop="tel">206-555-1234&lt;/span>
-  &lt;a href="http://pizza.com" itemprop="url">http://pizza.com&lt;/a>
+&lt;div itemscope itemtype ="http://schema.org/Organization">
+   &lt;span itemprop ="name">L'Amourita Pizza&lt;/span>
+   Located at 123 Main St, Albuquerque, NM.
+   Phone: &lt;span itemprop ="tel">206-555-1234&lt;/span>
+   &lt;a href="http://pizza.com" itemprop ="url">http://pizza.com&lt;/a>
 &lt;/div>
           </code></pre>
         </section>
@@ -214,6 +214,7 @@
        <!-- Nested Microdata-->
        <section>
           <section>
+<<<<<<< HEAD
             <h2>Nested Microdata</h2>
             <p>We have specified ALMOST everything for our <strong>Organization</strong>, but we still don't have entries for the address</p>
             <pre><code contenteditable>&lt;div itemscope itemtype="http://schema.org/Organization">
@@ -237,6 +238,35 @@
   Phone: &lt;span itemprop="tel">206-555-1234&lt;/span>
   &lt;a href="http://pizza.com" itemprop="url">http://pizza.com&lt;/a>
 &lt;/div></code></pre>
+=======
+            <h2>Nested Microdata</h2> 
+            <p>We have specified ALMOST everything for our <strong>Organization</strong>, but we still don't have entries for the address</p>        
+            <pre><code contenteditable>
+  &lt;div itemscope itemtype ="http://schema.org/Organization">
+     &lt;span itemprop ="name">L'Amourita Pizza&lt;/span>
+     Located at 123 Main St, Albuquerque, NM.
+     Phone: &lt;span itemprop ="tel">206-555-1234&lt;/span>
+     &lt;a href="http://pizza.com" itemprop ="url">http://pizza.com&lt;/a>
+  &lt;/div>
+            </code></pre>
+            <p class ="fragment">Addresses are their own unique <strong>itemtype</strong>. So we need to <em>nest</em> the address information inside a new element with the <strong>itemtype</strong> set to Address</p>
+          </section>
+          <section>
+            <h2>Nested Microdata</h2> 
+            <pre><code contenteditable>
+  &lt;div itemscope itemtype ="http://schema.org/Organization">
+     &lt;span itemprop ="name">L'Amourita Pizza&lt;/span>
+     Located at 
+      &lt;span itemprop ="address" itemscope itemtype ="http://schema.org/PostalAddress">
+        &lt;span itemprop ="streetAddress">123 Main St&lt;/span>, 
+        &lt;span itemprop ="addressLocality">Albuquerque&lt;/span>, 
+        &lt;span itemprop ="addressRegion">NM&lt;/span>.
+      &lt;/span>
+     Phone: &lt;span itemprop ="tel">206-555-1234&lt;/span>
+     &lt;a href="http://pizza.com" itemprop ="url">http://pizza.com&lt;/a>
+  &lt;/div>
+            </code></pre>
+>>>>>>> 4f0e6a2419e24830f67851e16bb3150ba3cb242d
          </section>
        </section>
 
@@ -395,8 +425,16 @@
               <a href="http://canvasrider.com/" target="_blank">http://canvasrider.com/</a>
             </li>
             <li>
+<<<<<<< HEAD
               <a href="http://lights.elliegoulding.com/" target="_blank">http://lights.elliegoulding.com/</a>
             </li>
+=======
+              <a href="http://lights.elliegoulding.com/" target ="_blank">http://lights.elliegoulding.com/</a>
+			</li>
+			<li>
+				<a href="http://codepen.io/jackrugile/pen/DGenc" target="_blank">Codepen.io</a>
+			</li>
+>>>>>>> 4f0e6a2419e24830f67851e16bb3150ba3cb242d
           </ul>
         </section>
         <section>
