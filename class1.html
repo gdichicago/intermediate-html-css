@@ -302,7 +302,7 @@
 </code></pre>
         <p>The associated HTML.</p>
       </section>
-      
+
       <!-- Standard practices-->
       <section>
         <h3>Standard Practices</h3>
@@ -312,9 +312,9 @@
           <li class = "fragment">Reset CSS files</li>
           <li class = "fragment">Standard widths and sizes</li>
           <li class = "fragment">Wrappers</li>
-        </ul>  
+        </ul>
       </section>
-      
+
       <!-- Reset CSS-->
       <section>
         <h3>Reset CSS</h3>
@@ -326,7 +326,7 @@
           <li>Links are blue and underlined</li>
         <ul>
       </section>
-      
+
       <section>
         <h3>Reset CSS</h3>
         <div>
@@ -344,10 +344,10 @@
           Lists:
 <pre><code class = "html">
   list-style: none;
-</code></pre>          
+</code></pre>
         </div>
       </section>
-      
+
       <!-- Sizes-->
       <section>
         <h3>Standard widths and sizes</h3>
@@ -364,7 +364,7 @@
           </li>
         </ul>
       </section>
-      
+
       <!-- Sizes-->
       <section>
         <h3>Wrappers</h3>
@@ -377,7 +377,7 @@
   }
 </code></pre>
       </section>
-      
+
       <!-- Let's Develop It -->
       <section>
         <h3>Let's Develop It</h3>
@@ -389,7 +389,7 @@
           <li>Notice the changes to the layout</li>
         </ul>
       </section>
-      
+
       <!-- Links-->
       <section>
         <h3>Linking on pages</h3>
@@ -401,7 +401,7 @@
 </code></pre>
       <p><a href = "http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors" target = "_blank">Example on Wikipedia</a>
       </section>
-      
+
       <!-- Pseudo selectors-->
       <section>
         <h3>Pseudo Selectors</h3>
@@ -411,10 +411,10 @@
   background-color: lightblue;
   color: grey
 }
-</code></pre>  
+</code></pre>
 <pre><code class = "html">
 &lt;div class = "turn-blue">I will only turn blue on hover&lt;/div>
-</code></pre>      
+</code></pre>
       <style>
       .turn-blue:hover{
         background-color: lightblue;
@@ -423,7 +423,7 @@
       </style>
       <span class = "turn-blue">I will only turn blue on hover</span>
       </section>
-      
+
       <!-- Fonts-->
       <section>
         <h3>@font-face</h3>
@@ -431,7 +431,7 @@
         <p class = "green">Yay!</p>
         <p>How do we use new and cool fonts?</p>
       </section>
-      
+
       <!-- Fonts-->
       <section>
         <h3>@font-face</h3>
@@ -443,7 +443,7 @@
 </code></pre>
         <a href = "http://fonts.googleapis.com/css?family=Audiowide|Quicksand:300,400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" target ="_blank">What does that do?</a>
       </section>
-      
+
       <section>
         <h3>@font-face</h3>
         <p>Download fonts locally</p>
@@ -462,7 +462,7 @@
   }
 </code></pre>
       </section>
-      
+
       <section>
         <h3>@font-face</h3>
         <p>Using the fonts</h3>
@@ -472,7 +472,7 @@ body{
 }
 </code></pre>
       </section>
-      
+
       <!-- Let's Develop It-->
       <section>
         <h3>Let's Develop It</h3>
@@ -489,10 +489,10 @@ body{
               <li>EntypoRegular for the bullets and jump up/down links</li>
             </ul>
           </li>
-          
+
         </ul>
       </section>
-      
+
       <!-- Intro to HTML 5-->
       <section>
         <h3>HTML 5: What is it?</h3>
@@ -504,7 +504,7 @@ body{
           <li>JavaScript</li>
         </ul>
       </section>
-      
+
       <!-- Specifications-->
       <section>
         <h2>HTML5 Specifications</h2>
@@ -516,200 +516,6 @@ body{
           <li class="fragment">2014 - planned for stable recommendation</li>
         </ul>
       </section>
-
-      <!-- Browser compatibility-->
-      <section>
-        <section>
-          <h2>What about the browsers?</h2>
-          <ul>
-            <li class="fragment">Reset CSS files</li>
-            <li class="fragment">Standard widths and sizes</li>
-            <li class="fragment">Wrappers</li>
-          </ul>
-        </section>
-
-        <!-- Reset CSS-->
-        <section>
-          <h3>Reset CSS</h3>
-          <p>Even though HTML is the structure and CSS is the design, some HTML elements have default styles</p>
-          <p class="fragment">Examples include:</p>
-          <ul class="fragment">
-            <li>Bulleted lists like this one have standard bullets</li>
-            <li>Paragraphs have default padding</li>
-            <li>Links are blue and underlined</li>
-          </ul>
-        </section>
-        <section>
-          <h3>Reset CSS</h3>
-          <div>
-            Most elements:
-<pre><code class="html">margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;</code></pre>
-          </div>
-          <div>
-            Lists:
-            <pre><code class="html">list-style: none;</code></pre>
-          </div>
-        </section>
-
-        <!-- Sizes-->
-        <section>
-          <h3>Standard widths and sizes</h3>
-          <p>Some sizes that are good to know about</p>
-          <ul>
-            <li>A standard font size is usually 12px</li>
-            <li>
-              Screens vary greatly in width!
-              Standardize your design a couple ways
-              <ul>
-                <li>Set the body width to a specific width</li>
-                <li>Set the content area width to 100%, with max-width of around 1200px/1400px and a min-width of around 960px.
-              </ul>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Sizes-->
-        <section>
-          <h3>Wrappers</h3>
-          <p>Wrappers are a good way to center content if the screen width is wider than your content.</p>
-  <pre><code class="html">.wrapper{
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-}</code></pre>
-        </section>
-
-        <!-- Let's Develop It -->
-        <section>
-          <h3>Let's Develop It</h3>
-          <p class="blue">Getting our feet wet</p>
-          <ul>
-            <li>Download practice files</li>
-            <li>Look through the page</li>
-            <li>Add a link to the reset.css file in the head of the document</li>
-            <li>Notice the changes to the layout</li>
-          </ul>
-        </section>
-
-        <!-- Links-->
-        <section>
-          <h3>Linking on pages</h3>
-          <pre><code class="html">&lt;a href="#section">Go to Section!&lt;/a></code></pre>
-          <pre><code class="html">&lt;a name="section">&lt;/a></code></pre>
-          <p><a href="http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors" target="_blank">Example on Wikipedia</a>
-        </section>
-
-        <!-- Pseudo selectors-->
-        <section>
-          <style scoped>
-          .turn-blue:hover{
-            background-color: lightblue;
-            color: grey
-          }
-          </style>
-          <h3>Pseudo Selectors</h3>
-          <p>In addition to applying css to elements, classes and ids, you can apply css on certain events. Most notably, hover</p>
-<pre><code class="html">.turn-blue:hover{
-  background-color: lightblue;
-  color: grey
-}</code></pre>
-          <pre><code class="html">&lt;div class="turn-blue">I will only turn blue on hover&lt;/div>
-</code></pre>
-          <span class="turn-blue">I will only turn blue on hover</span>
-        </section>
-
-        <!-- Fonts-->
-        <section>
-          <h3>@font-face</h3>
-          <p>The world of HTML has progressed beyond Times New Roman and Arial</p>
-          <p class="green">Yay!</p>
-          <p>How do we use new and cool fonts?</p>
-        </section>
-
-        <!-- Fonts-->
-        <section>
-          <h3>@font-face</h3>
-          <p>Use font from outside sources (like Google Web Fonts)</p>
-          <p><a href="http://www.google.com/webfonts" target="_blank">http://www.google.com/webfonts</a></p>
-          <p>In our example, we use Audiowide, Quicksand and Lato</p>
-<pre><code class="html">&lt;link href="http://fonts.googleapis.com/css?family=Audiowide|Quicksand:300,400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
-</code></pre>
-          <a href="http://fonts.googleapis.com/css?family=Audiowide|Quicksand:300,400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" target="_blank">What does that do?</a>
-        </section>
-
-        <section>
-          <h3>@font-face</h3>
-          <p>Download fonts locally</p>
-          <p>In our example, we downloaded 'Enotypo'</p>
-          <p>To use it, add the following to css:</p>
-<pre><code class="html">@font-face {
-  font-family: 'EntypoRegular';
-  src: url('font/Entypo-webfont.eot');
-  src: url('font/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
-       url('font/Entypo-webfont.woff') format('woff'),
-       url('font/Entypo-webfont.ttf') format('truetype'),
-       url('font/Entypo-webfont.svg#EntypoRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}</code></pre>
-        </section>
-
-        <section>
-          <h3>@font-face</h3>
-          <p>Using the fonts</p>
-<pre><code class="html">body{
-  font-family: 'Lato', Arial, sans-serif;
-}
-</code></pre>
-        </section>
-
-        <!-- Let's Develop It-->
-        <section>
-          <h3>Let's Develop It</h3>
-          <p class="blue">Use your new-found knowledge!</p>
-          <ul>
-            <li>Update the links in the header and footer to jump to the corresponding section</li>
-            <li>Update the links in the site to change color on hover. Try to update the background color too!</li>
-            <li>
-              Update the font of the site. The completed example uses:
-              <ul>
-                <li>Lato for the body</li>
-                <li>Audiowide for h1</li>
-                <li>Quicksand for h2</li>
-                <li>Enotypo for the bullets and jump up/down links</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Intro to HTML 5-->
-        <section>
-          <h3>HTML 5: What is it?</h3>
-          <p>Formally, HTML5 is the <a href="http://www.w3.org/TR/html5/" target="_blank">W3C’s specification</a> for the next version of HTML.</p>
-          <p>Informally, people use "HTML5" to refer to a whole set of new web standards and abilities:
-          <ul class >
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-          </ul>
-        </section>
-
-        <!-- Specifications-->
-        <section>
-          <h2>HTML5 Specifications</h2>
-          <ul>
-            <li>2004 - started work</li>
-            <li class="fragment">2008 - first public working draft</li>
-            <li class="fragment">2011 - last call</li>
-            <li class="fragment">2012 - working draft</li>
-            <li class="fragment">2014 - planned for stable recommendation</li>
-          </ul>
-        </section>
 
         <!-- Browser compatibility-->
         <section>
