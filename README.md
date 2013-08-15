@@ -37,8 +37,11 @@ This class will be split into two topics. The first will cover the concepts of r
 
 The second topic will be about compatibility with older browsers. This will include use of libraries such as Modernizr or HTML5Shiv and will also discuss the struggles of designing a website for compatibility.
 
+## Cloning Reveal submodule 
 
-## Theme customization
+Reveal is a submodule. To clone it correctly or learn more, see [these instructions](http://git-scm.com/book/en/Git-Tools-Submodules#Cloning-a-Project-with-Submodules). 
+
+## Theme customization in Reveal 
 
 You can change theme colors by changing the theme css to any of the following options:
 ```html
