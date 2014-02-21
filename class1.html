@@ -15,7 +15,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<link rel="stylesheet" href="reveal/css/reveal.css">
-		<link rel="stylesheet" href="reveal/css/theme/gdidefault.css" id="theme">
+		<link rel="stylesheet" href="reveal/css/theme/gdilight.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
@@ -216,6 +216,10 @@
         <!-- What is CSS-->
         <section>
           <h3>CSS: Review</h3>
+          <img src="http://i.imgur.com/Q3cUg29.gif">
+        </section>
+        <section>
+          <h3>CSS: Review</h3>
           <div class="left-align">
             <p>CSS = Cascading Style Sheets</p>
             <p>CSS is a "style sheet language" that lets you style the elements on your page.</p>
@@ -272,7 +276,8 @@
 <pre><code class="html">#footer {
   property: value;
 }</code></pre>
-          <p>Selects all elements with an id of "footer".</p>
+          <p>Selects all elements with an ID of "footer".</p>
+          <p>IDs are usually unique and only used once.</p>
           <pre><code class="html">&lt;p id="footer">Copyright 2011&lt;/p></code></pre>
           <p>The associated HTML.</p>
 			  </section>
@@ -284,7 +289,7 @@
   color: red;
 }</code></pre>
           <p>Selects all elements with a class of "warning".</p>
-
+          <p>Classes are re-usable bits of style.</p>
           <pre><code class="html">&lt;p class="warning">Run away!&lt;/p></code></pre>
           <p>The associated HTML.</p>
 			  </section>
@@ -393,6 +398,7 @@
       <!-- Links-->
       <section>
         <h3>Linking on pages</h3>
+        <p>Links that begin with <code>#</code> jump along your page.</p>
 <pre><code class = "html">
 &lt;a href = "#section">Go to Section!&lt;/a>
 </code></pre>
