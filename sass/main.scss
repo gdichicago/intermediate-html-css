@@ -8,6 +8,20 @@ body {
   font-weight: 300;
 }
 
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: $middleGray;
+  font-weight: 400;
+}
+
+a:hover {
+  color: $lightestGray;
+  font-weight: 400;
+}
+
 header {
   padding: 20px;
   h1 {
@@ -20,6 +34,22 @@ header {
   }
   nav {
     padding: 20px 0px;
+    ul li {
+      display: inline;
+      padding: 0px 10px;
+    }
+    a {
+      color: $lightestGray;
+      font-weight: 400;
+      padding: 5px 10px;
+      margin: 0px 10px;
+    }
+    a:hover {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      color: $lime;
+    }
   }
 }
 
