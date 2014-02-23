@@ -1,0 +1,28 @@
+@import "var";
+
+body {
+  font-family: $font;
+}
+
+header {
+  background-color: $lightTeal;
+  padding: 20px;
+  border-bottom: 10px solid $darkTeal;
+  h1 {
+    font-size: 3em;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 2em;
+    font-weight: 300;
+  }
+}
+
+article {
+  padding: 40px;
+  h1 {
+    font-size: 2em;
+    color: $pink;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,85 @@
+/*
+Syntax error: File to import not found or unreadable: var.
+              Load paths:
+                /home/action/workspace/gdi-core-intermediate-html-css/sass
+                /home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/blueprint/stylesheets
+                /home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 1 of /home/action/workspace/gdi-core-intermediate-html-css/sass/main.scss
+
+1: /home/action/workspace/gdi-core-intermediate-html-css/sass/main.scss
+
+Backtrace:
+/home/action/workspace/gdi-core-intermediate-html-css/sass/main.scss:1
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/import_node.rb:45:in `import'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/import_node.rb:28:in `imported_file'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/import_node.rb:37:in `css_import?'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/root_node.rb:20:in `render'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:95:in `block (4 levels) in perform'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/path.rb:39:in `delete'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/state/directory.rb:32:in `block in deleted'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/state/directory.rb:31:in `each'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/state/directory.rb:31:in `deleted'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/state/directory.rb:16:in `refresh'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/inotify.rb:12:in `block in add_handler'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:205:in `call'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:205:in `block in watch'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/rb-inotify-0.9.3/lib/rb-inotify/watcher.rb:41:in `[]'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/rb-inotify-0.9.3/lib/rb-inotify/watcher.rb:41:in `callback!'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/rb-inotify-0.9.3/lib/rb-inotify/event.rb:128:in `callback!'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:238:in `block in process'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:238:in `each'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:238:in `process'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:221:in `run'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/inotify.rb:20:in `run'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:44:in `call'
+/home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+/home/action/.rvm/gems/ruby-2.0.0-p247/bin/compass:23:in `load'
+/home/action/.rvm/gems/ruby-2.0.0-p247/bin/compass:23:in `<main>'
+/home/action/.rvm/gems/ruby-2.0.0-p247/bin/ruby_noexec_wrapper:14:in `eval'
+/home/action/.rvm/gems/ruby-2.0.0-p247/bin/ruby_noexec_wrapper:14:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: var.\A               Load paths:\A                 /home/action/workspace/gdi-core-intermediate-html-css/sass\A                 /home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /home/action/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 1 of /home/action/workspace/gdi-core-intermediate-html-css/sass/main.scss\A \A 1: /home/action/workspace/gdi-core-intermediate-html-css/sass/main.scss"; }
