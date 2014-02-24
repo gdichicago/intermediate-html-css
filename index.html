@@ -6,7 +6,6 @@
   <head>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
     <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
     <!--[if IE]>
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -15,12 +14,30 @@
 <body>
   <header>
     <div class="pure-g">
-      <div class="pure-u-1">
-        <h1>Girl Develop It</h1>
-        <h2>Intermediate HTML & CSS</h2>
+      <div class="pure-u-1-5"></div>
+      <div class="pure-u-3-5">
+        <h1>Girl Develop It Chicago</h1>
+        <h2>Intermediate HTML and CSS</h2>
         <nav>
+          <h3>
+            <a href="#materials">Class materials</a>
+            <a href="#resources">Resources</a>
+            <a href="#code">Code samples</a>
+            <a href="http://www.meetup.com/Girl-Develop-It-Chicago-IL/">Meetup.com</a>
+          </h3>
+        </nav>
+      </div>
+      <div class="pure-u-1-5"></div>
+    </div>
+  </header>
+  <section>
+    <div class="pure-g">
+      <div class="pure-u-1-5"></div>
+      <div class="pure-u-3-5">
+        <article>
+          <a name="materials"></a><h1>Class materials</h1>
+          <h2>Slides</h2>
           <ul>
-            <li>Slides</li>
             <li>
               <a href="http://feministy.github.io/gdi-core-intermediate-html-css/class1.html">Part 1: HTML5</a>
             </li>
@@ -34,29 +51,125 @@
               <a href="http://feministy.github.io/gdi-core-intermediate-html-css/class4.html">Part 4: CSS3 Responsive Design</a>
             </li>
           </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <section>
-    <div class="pure-g">
-      <div class="pure-u-1">
-        <article>
-          <h1>Hey there! Thanks for taking this class!</h1>
-          <p>
-            There are a few things we went over that are not included in the slides. Below you'll find some code samples and and other magical things.
-          </p>
 
-          <h2>CSS Animations</h2>
-          <p>
-            CSS animations come in two parts: 
-          </p>
-          <ol>
-            <li>A block of CSS that manages the start and end points of the animation</li>
-            <li>A block of CSS assigned to an ID</li>
-          </ol>
+          <h2>Workshop files</h2>
+          <ul>
+            <li>Part 1: <a href="http://goo.gl/rbD5pH">download <span class="symbol">x</span></a></li>
+            <li>Part 2: <a href="http://goo.gl/BCvpM5">download <span class="symbol">x</span></a></li>
+            <li>Part 3: <a href="http://goo.gl/xM2kHo">download <span class="symbol">x</span></a></li>
+            <li>Part 4: <a href="http://goo.gl/40s40I">download <span class="symbol">x</span></a></li>
+          </ul>
         </article>
+        <article>
+          <a name="resources"></a><h1>Resources</h1>
+          <ul>
+            <li><a href="http://caniuse.com/">Can I Use?</a>: helpful information about which HTML5 and CSS3 features work in which browsers</li>
+          </ul>
+          <h2>HTML</h2>
+          <ul>
+            <li><a href="http://html5doctor.com/element-index/">HTML5 Doctor element index</a></li>
+            <li><a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">HTML5 Doctor element flowchart</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">Mozilla Developer Network: HTML5</a></li>
+          </ul>
+          <h2>CSS</h2>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3">Mozilla Developer Network: CSS3</a></li>
+            <li><a href="http://www.colorzilla.com/gradient-editor/">Gradient editor</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries">Media queries for responsive design</a></li>
+            <li><a href="http://www.w3.org/TR/css3-transitions/#animatable-css">Animatable properties</a></li>
+            <li><a href="http://css-tricks.com/how-nth-child-works/"><code>n-th:child</code> explained</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">MDN: <code>transform</code></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation">MDN: <code>animation</code></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition">MDN: <code>transition</code></a></li>
+            <li><a href="http://prefixr.com/">Prefixr</a>: add vendor prefixes to your CSS for you!</li>
+            <li><a href="http://www.w3.org/TR/CSS2/syndata.html#vendor-keyword-history">List of vendor prefixes</a> (you don't need all of them)</li>
+          </ul>
+          <h2>Microdata</h2>
+          <ul>
+            <li><a href="http://schema.org/docs/gs.html">Microdata schemas</a></li>
+            <li><a href="http://www.google.com/webmasters/tools/richsnippets">Google rich snippets testing tool</a>: to test your microdata output (best with raw HTML)</li>
+          </ul>
+          <h2>Boilerplates, templates, and libraries</h2>
+          <ul>
+            <li><a href="http://html5boilerplate.com/">HTML5 Boilerplate</a></li>
+            <li><a href="http://www.initializr.com/">Initializr</a> (another boilerplate - with responsive!)</li>
+            <li><a href="http://modernizr.com/">Modernizr</a>: a JavaScript library that makes websites behave</li>
+            <li><a href="http://www.responsivegridsystem.com/">Responsive Grid System</a></li>
+            <li><a href="http://purecss.io/">Pure CSS</a></li>
+            <li><a href="http://getbootstrap.com/">Twitter Bootstrap</a></li>
+            <li><a href="http://bootswatch.com/">Themes for Bootstrap</a></li>
+            <li><a href="http://themble.com/bones/">HTML5 Boilerplate for Wordpress</a></li>
+          </ul>
+          <h2>Tutorials</h2>
+          <ul>
+            <li><a href="http://www.bentobox.io/">Bento Box</a>: collection of 'learn to code' online resources, grouped by skill/language</li>
+            <li><a href="https://dash.generalassemb.ly/">Dash</a>: tutorials for HTML5, CSS3, and JavaScript</li>
+          </ul>
+        </article>
+        <article>
+          <a name="code"></a><h1>Code samples</h1>
+            <h2>CSS transitions</h2>
+            <p>
+              When you hover over the links on this page, they face in and out from gray to pink. Pretty cool, eh? This is how you do it:
+            </p>
+            <script src="https://gist.github.com/feministy/50f1a1a31ee5cc832546.js"></script>
+            <h2>CSS transformations</h2>
+            <p>
+              There are a number of different types of CSS transformations. For a full list, see the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">MDN guides</a>.
+            </p>
+            <p>
+              Here is an example from class:
+            </p>
+            <script src="https://gist.github.com/feministy/ca19065335aed965a7f2.js"></script>
+            <h2>CSS animations</h2>
+            <p>
+              CSS animations come in two parts:
+            </p>
+            <ul>
+              <li>A block of CSS that manages the start and end points of the animation</li>
+              <li>A block of CSS assigned to an ID</li>
+            </ul>
+            <p>
+              The example below is from class. It will fade the image in and out upon hover.
+            </p>
+            <p>
+              First, we have the CSS that manages the animation:
+            </p>
+            <script src="https://gist.github.com/feministy/daed8442553ccebad496.js"></script>
+            <p>
+              Then we call on the actual animation. We only want to trigger it on hover, so we use <code>:hover</code> in our CSS block to indicate that. Note that the name of the animation (above) is the first value listed when we call the animation below:
+            </p>
+            <script src="https://gist.github.com/feministy/10288c53a190ff6fc357.js"></script>
+            <p>
+              Because we're using a <code>#famous article.woman</code> to identify what the animation applies to, we don't need to edit our HTML at all since it already includes that class (<code>woman</code> inside of an <code>article</code> with the ID <code>famous</code>).
+            </p>
+
+        </article>
+        <article>
+          <h1>Discussion</h1>
+          <p>
+            Stuck? Need help? Have another resource? Leave a note here!
+          </p>
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+              var disqus_shortname = 'gdichicago'; // required: replace example with your forum shortname
+
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+        <footer>
+          <p>Created and maintained by <a href="http://twitter.com/feministy">Liz Abinante</a> of <a href="http://gdichicago.com">Girl Develop It Chicago</a>.</p>
+        </footer>
       </div>
+      <div class="pure-u-1-5"></div>
     </div>
   </section>
   <script type="text/javascript" src="//use.typekit.net/inx7vdr.js"></script>

@@ -1,7 +1,18 @@
 $font: 'clavo', 'Georgia', serif;
 
 $darkestGray: #272727;
-$lime: #B0BF5A;
+$accent: #f25c65;
 $white: #F4F4F4;
 $lightestGray: #A6A6A6;
 $middleGray: #5B5B5B;
+
+@font-face {
+  font-family: 'EntypoRegular';
+  src: url('../font/Entypo-webfont.eot');
+  src: url('../font/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../font/Entypo-webfont.woff') format('woff'),
+       url('../font/Entypo-webfont.ttf') format('truetype'),
+       url('../font/Entypo-webfont.svg#EntypoRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

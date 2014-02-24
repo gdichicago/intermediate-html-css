@@ -1,5 +1,9 @@
 @import "var";
 
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] { font-family: $font; }
+
 body {
   font-size: 1.25em;
   font-family: $font;
@@ -10,52 +14,73 @@ body {
 
 a {
   text-decoration: none;
+  color: $middleGray;
+  font-weight: 400;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  color: $middleGray;
-  font-weight: 400;
 }
 
 a:hover {
-  color: $lightestGray;
-  font-weight: 400;
+  color: $accent;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #fff;
+  padding: 5px;
+}
+
+ol, ul, li {
+  margin: 0px 20px;
+  padding: 10px;
+}
+
+footer {
+  font-size: 0.8em;
+  padding: 40px 0px;
+}
+
+.symbol {
+  font-family: 'EntypoRegular';
+  font-size: 2em;
+  padding: 0px 5px;
 }
 
 header {
   padding: 20px;
+  h1, h2, h3 {
+    text-align: center;
+    padding: 20px 0px;
+  }
   h1 {
     font-size: 3em;
     font-weight: 800;
+    color: $accent;
   }
   h2 {
     font-size: 2.5em;
     font-weight: 300;
   }
-  nav {
-    padding: 20px 0px;
-    ul li {
-      display: inline;
-      padding: 0px 10px;
-    }
-    a {
-      color: $lightestGray;
-      font-weight: 400;
-      padding: 5px 10px;
-      margin: 0px 10px;
-    }
-    a:hover {
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      border-radius: 10px;
-      color: $lime;
-    }
+  h3 {
+    font-size: 1.25em;
+  }
+  a {
+    padding: 20px;
+  }
+  a:before {
+    content: '7';
+    font-family: 'EntypoRegular';
+    font-size: 1.5em;
+    padding: 0px 10px;
   }
 }
 
 article {
   line-height: 1.6em;
   padding: 20px;
+  margin-bottom: 20px;
+  border-top: 1px dotted $middleGray;
   p {
     padding: 10px 0px;
   }
@@ -66,12 +91,13 @@ article {
   }
   h2 {
     padding: 30px 0px 10px 0px;
-    font-size: 1.75em;
-    font-weight: 700;
+    font-size: 1.6em;
+    font-weight: 300;
   }
-  ol li {
-    list-style-type: decimal;
-    margin: 0px 50px;
-    padding: 10px;
+  ul li:before {
+    content: '7';
+    font-family: 'EntypoRegular';
+    font-size: 1.5em;
+    padding: 0px 10px;
   }
 }
