@@ -18,6 +18,7 @@ a {
   color: #1D766F;
   text-decoration: none;
 }
+
 a:hover {
   color: #BC2F36;
 }
@@ -91,7 +92,7 @@ nav li a:hover {
 
 /* Header */
 header {
-  background-color: #009D92;
+  background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
   padding: 10px;
 }
 header h1 {
@@ -141,7 +142,7 @@ header:after {
 
 /* Famous Women */
 #famous article.woman {
-  background-color: white;
+  background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
   float: left;
   min-height: 250px;
   margin: 1%;
@@ -149,7 +150,7 @@ header:after {
   width: 27.33%;
 }
 
-#famous article.break {
+#famous article:nth-child(4n) {
   clear: both;
 }
 
@@ -157,6 +158,7 @@ header:after {
   display: block;
   margin: 1em auto;
   width: 100%;
+  border-radius: 50%;
 }
 
 
