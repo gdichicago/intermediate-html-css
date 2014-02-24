@@ -152,6 +152,7 @@ header:after {
 #famous h2 {
   text-shadow: 1px 1px 2px #009D92;
 }
+
 #famous article.woman {
   background-color: white;
   float: left;
@@ -161,6 +162,26 @@ header:after {
   padding: 2%;
   width: 27.33%;
 }
+
+/*Tablet*/
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  #famous article.woman {
+    color: red;
+  }
+}
+
+/*Mobile*/
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  #famous article.woman {
+    float: none;
+    margin: 5px auto;
+    padding: 2%;
+    width: 80%;
+    color: yellow;
+  }
+  body { min-width: 300px; }
+}
+
 
 #famous article:hover {
   opacity: 1;
