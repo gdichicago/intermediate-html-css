@@ -162,16 +162,6 @@ header:after {
   width: 27.33%;
 }
 
-@-webkit-keyframes ada {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-#famous article.woman:hover {
-  -webkit-animation: ada 2s infinite alternate;
-  opacity: 0;
-}
-
 #famous article:hover {
   opacity: 1;
 }
