@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Class 1 ~ Intermediate HTML/CSS ~ Girl Develop IT</title>
+
+    <meta name="description" content="This is the official Girl Develop It Intermediate Core HTML/CSS curriculum. It was developed through the contributions of Julie Pagano, Jen Myers, Alexis Goldstein and Izzy Johnston.
+
+    The course is meant to be taught in 4 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+    <meta name="author" content="Girl Develop It">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="https://s3.amazonaws.com/gdichicago-cdn/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/gdichicago-cdn/reveal.js/css/theme/gdilight.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/gdichicago-cdn/reveal.js/lib/css/light.css">
+
+    <!-- If use the PDF print sheet so students can print slides-->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/gdichicago-cdn/reveal.js/css/print/pdf.css" type="text/css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <!-- Opening slide -->
+      <section>
+        <img src="https://s3.amazonaws.com/gdichicago-cdn/images/logo.png" alt=""/>
+        <h3>Intermediate HTML and CSS</h3>
+        <h4>Part 2: HTML5 Advances</h4>
+      </section>
+
+      <!-- Welcome-->
+      <section>
+        <h3>Welcome!</h3>
+        <div class="left-align">
+          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+          <p class="green">Some "rules"</p>
+          <ul>
+            <li>We are here for you!</li>
+            <li>Every question is important</li>
+            <li>Help each other</li>
+            <li>Have fun</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- What is Microdata-->
+      <section>
+        <section>
+          <h2>Microdata</h2>
+        </section>
+        <section>
+          <h2>Microdata</h2>
+          <p class="yellow">Micro-what?</p>
+          <p class="fragment">From the W3C spec:</p>
+          <blockquote class="fragment">Sometimes, it is desirable to annotate content with specific machine-readable labels...</blockquote>
+          <blockquote class="fragment">Microdata allows nested groups of namevalue pairs to be added to documents, in parallel with the existing content.</blockquote>
+          <a href="http://www.w3.org/TR/microdata/#overview" target="_blank">Microdata Overview</a>
+        </section>
+        <section>
+          <h2>Microdata</h2>
+          <p class="yellow">Sounds <strong>BORING</strong></p>
+          <p>Why should I care?</p>
+          <img src="../../images/bored-cat.jpg" alt=""/>
+        </section>
+        <section>
+          <h2>Microdata</h2>
+          <p>Wouldn't it be great if the search results for your restaurant looked like this?</p>
+          <img src="../../images/place-microdata.png" alt=""/>
+        </section>
+        <section>
+          <h2>Microdata</h2>
+          <p>Or if search results for your book looked like this?</p>
+          <img src="../../images/person-microdata.png" alt=""/>
+        </section>
+        <section>
+          <h2>Microdata</h2>
+          <p>Or if search results for your recipe looked like this?</p>
+          <img src="../../images/recipe-microdata.png" alt=""/>
+        </section>
+      </section>
+
+      <!-- Rich Snippets-->
+      <section>
+        <section>
+          <h2>Rich Snippets</h2>
+          <blockquote class="fragment">The more information a search result snippet can provide, the easier it is for users to decide whether that page is relevant to their search.</blockquote>
+          <a href="http://support.google.com/webmasters/bin/answer.py?hl%3Den%26answer%3D99170" target="_blank">Rich snippets</a>
+        </section>
+        <section>
+          <h2>Rich Snippets</h2>
+          <blockquote class="fragment">With rich snippets, webmasters with sites <strong>containing structured</strong> content...can label their content to make it clear that each labeled piece of text represents a certain type of data: for example, a restaurant name, an address, or a rating.</blockquote>
+          <a href="http://support.google.com/webmasters/bin/answer.py?hl%3Den%26answer%3D99170" target="_blank">Rich snippets</a>
+        </section>
+      </section>
+
+      <!-- Structure attributes-->
+      <section>
+        <section>
+          <h2>Microdata Structure</h2>
+          <p>We will add microdata to our favorite pizza restaurant</p>
+          <pre><code contenteditable>
+&lt;div>
+  L'Amourita Pizza
+  Located at 123 Main St, Albuquerque, NM.
+  Phone: 206-555-1234
+  &lt;a href="http://pizza.com">http://pizza.com&lt;/a>
+&lt;/div>
+          </code></pre>
+        </section>
+        <section>
+          <h2>Microdata Structure</h2>
+          <p>We need to define three things to add microdata to our sites:</p>
+          <ul>
+            <li class="fragment">Itemscope attribute</li>
+            <li class="fragment">Itemtype attribute</li>
+            <li class="fragment">Itemprop attribute</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Item scope-->
+      <section>
+        <section>
+          <h2>Microdata Structure</h2>
+          <p class="yellow">Itemscope</p>
+          <pre><code contenteditable>
+&lt;div itemscope>
+  L'Amourita Pizza
+  Located at 123 Main St, Albuquerque, NM.
+  Phone: 206-555-1234
+  &lt;a href="http://pizza.com">http://pizza.com&lt;/a>
+&lt;/div>
+          </code></pre>
+        </section>
+        <section>
+          <h2>Microdata Structure</h2>
+          <p class="yellow">Item scope</p>
+          <p>Sets the "scope" of what we are describing with the microdata.</p>
+          <p>All elements nested inside the div with "itemscope" will adhere to the vocabulary we specify with "itemtype". (i.e. person, place, recipe)</p>
+        </section>
+      </section>
+
+      <!-- Item type-->
+      <section>
+        <section>
+          <h2>Microdata Structure</h2>
+          <p class="yellow">Itemtype</p>
+          <pre><code contenteditable>
+&lt;div itemscope itemtype="http://schema.org/Organization">
+  L'Amourita Pizza
+  Located at 123 Main St, Albuquerque, NM.
+  Phone: 206-555-1234
+  &lt;a href="http://pizza.com">http://pizza.com&lt;/a>
+&lt;/div>
+          </code></pre>
+        </section>
+        <section>
+          <h2>Microdata Structure</h2>
+          <p class="yellow">Itemtype</p>
+          <p>Points you to the place where a microdata type is defined</p>
+          <p>Since we're defining a business, we want to point to the definition of an <strong>Organization</strong></p>
+          <p><a href="http://schema.org" target="_blank">http://schema.org</a> defines several type including <a href="http://data-vocabulary.org/Organization" target="_blank">Organization</a></p>
+        </section>
+      </section>
+
+      <!-- Item properties-->
+      <section>
+        <section>
+          <h2>Microdata Structure</h2>
+          <p class="yellow">Itemprop</p>
+          <pre><code contenteditable>
+&lt;div itemscope itemtype ="http://schema.org/Organization">
+   &lt;span itemprop ="name">L'Amourita Pizza&lt;/span>
+   Located at 123 Main St, Albuquerque, NM.
+   Phone: &lt;span itemprop ="telephone">206-555-1234&lt;/span>
+   &lt;a href="http://pizza.com" itemprop ="url">http://pizza.com&lt;/a>
+&lt;/div>
+          </code></pre>
+        </section>
+        <section>
+          <h2>Microdata Structure</h2>
+          <p class="yellow">Itemprop</p>
+          <p>Itemprop is a property of your Item's type. The available properties are listed on the relevant page at <a href="http://schema.org/docs/schemas.html" target="_blank">http://schema.org/docs/schemas</a></p>
+          <p>For our <strong>Organization</strong> example, the available include are: name, url, address, telephone, and location. For the full list: <a href="http://schema.org/Organization" target="_blank">http://schema.org/Organization</a></p>
+        </section>
+
+        <section>
+          <h2>Microdata Structure</h2>
+          <p class="yellow">Itemprop</p>
+          <p>Itemprop is a property of your Item's type. The available properties are listed on the relevant page at <a href="http://schema.org/docs/schemas.html" target="_blank">http://schema.org/docs/schemas</a></p>
+          <p>Here are properties of a <a href="http://schema.org/Recipe" target="_blank">Recipe</a></p>
+          <img src="../../images/recipe-itemprop.png" alt=""/>
+        </section>
+      </section>
+
+       <!-- Nested Microdata-->
+       <section>
+          <section>
+            <h2>Nested Microdata</h2>
+            <p>We have specified ALMOST everything for our <strong>Organization</strong>, but we still don't have entries for the address</p>
+            <pre><code contenteditable>
+  &lt;div itemscope itemtype ="http://schema.org/Organization">
+     &lt;span itemprop ="name">L'Amourita Pizza&lt;/span>
+     Located at 123 Main St, Albuquerque, NM.
+     Phone: &lt;span itemprop ="telephone">206-555-1234&lt;/span>
+     &lt;a href="http://pizza.com" itemprop ="url">http://pizza.com&lt;/a>
+  &lt;/div>
+            </code></pre>
+            <p class ="fragment">Addresses are their own unique <strong>itemtype</strong>. So we need to <em>nest</em> the address information inside a new element with the <strong>itemtype</strong> set to Address</p>
+          </section>
+          <section>
+            <h2>Nested Microdata</h2>
+            <pre><code contenteditable>
+  &lt;div itemscope itemtype ="http://schema.org/Organization">
+     &lt;span itemprop ="name">L'Amourita Pizza&lt;/span>
+     Located at
+      &lt;span itemprop ="address" itemscope itemtype ="http://schema.org/PostalAddress">
+        &lt;span itemprop ="streetAddress">123 Main St&lt;/span>,
+        &lt;span itemprop ="addressLocality">Albuquerque&lt;/span>,
+        &lt;span itemprop ="addressRegion">NM&lt;/span>.
+      &lt;/span>
+     Phone: &lt;span itemprop ="telephone">206-555-1234&lt;/span>
+     &lt;a href="http://pizza.com" itemprop ="url">http://pizza.com&lt;/a>
+  &lt;/div>
+            </code></pre>
+         </section>
+       </section>
+
+      <!-- Microdata Resources-->
+      <section>
+        <h2>Microdata Resources</h2>
+        <ul>
+          <li>To make sure google sees your page the  way you expect (in terms of the microdata), use this tool: <a href="http://www.google.com/webmasters/tools/richsnippets" target="_blank">http://www.google.com/webmasters/tools/richsnippets</a></li>
+          <li>Getting started guide: <a href="http://schema.org/docs/gs.html" target="_blank">http://schema.org/docs/gs.html</a></li>
+          <li>Tutorial on microdata from Mark Pilgrim: <a href="http://diveintohtml5.info/extensibility.html" target="_blank">http://diveintohtml5.info/extensibility.html</a></li>
+          <li>Google overview of using Microdata for an Organization: <a href="http://www.google.com/support/webmasters/bin/answer.py?answer=146861" target="_blank">http://www.google.com/support/webmasters/bin/answer.py?answer=146861</a></li>
+        </ul>
+      </section>
+
+      <!-- Let's Develop It-->
+      <section>
+       <section>
+          <h2>Let's Develop It</h2>
+          <p>Enhance our
+            Women in Computing web site to use HTML5 &amp; CSS3</p>
+        </section>
+        <section>
+          <p>Use the <a href="http://schema.org/Person" target="_blank">Person</a> schema to describe the women in tech. Feel free to add more info than we have to use more itemprops!</p>
+        </section>
+      </section>
+
+      <!-- Multimedia-->
+      <section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_multimedia.svg" height="50" alt=""/>
+            Multimedia
+          </h2>
+          <p>Audio and video are first class citizens in HTML5</p>
+        </section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_multimedia.svg" height="50" alt=""/>
+            Multimedia
+          </h2>
+          <p>Useful as a replacement for flash on mobile devices</p>
+          <p>Flash makes mobile devices sad :(</p>
+        </section>
+      </section>
+
+      <!-- Video -->
+      <section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_multimedia.svg" height="50" alt=""/>
+            Video
+          </h2>
+          <p class="yellow">The Dream</p>
+          <p>The video element was created to make it unnecessary to use plugins to display video content on your pages.</p>
+          <p>The idea is to simplify and streamline video content delivery.</p>
+          <pre><code>
+&lt;video src="demo.mp4" type="video/mp4">
+  Your browser does not support the video element.
+&lt;/video>
+          </code></pre>
+        </section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_multimedia.svg" height="50" alt=""/>
+            Video
+          </h2>
+          <p class="yellow">The Reality</p>
+          <p>If you want to support ALL browsers and ALL video encodings, you will still need a plugin as a last-resort fall back plan.</p>
+          <p>This is because not all browsers read video the same way, and older browsers (like IE&lt;9) don't support the video element at all.</p>
+        </section>
+
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_multimedia.svg" height="50" alt=""/>
+            Video
+          </h2>
+          <p class="yellow">The Reality</p>
+          <pre class="massive"><code contenteditable>&lt;video id="movie" width="320" height="240" preload controls>
+  &lt;source src="pr6.webm" type='video/webm; codecs="vp8, vorbis"' />
+  &lt;source src="pr6.ogv" type='video/ogg; codecs="theora, vorbis"' />
+  &lt;source src="pr6.mp4" />
+  &lt;object width="320" height="240" type="application/x-shockwave-flash" data="flowplayer-3.2.1.swf">
+    &lt;param name="movie" value="flowplayer-3.2.1.swf" />
+    &lt;param name="allowfullscreen" value="true" />
+    &lt;param name="flashvars" value='config={"clip": {"url": "http://wearehugh.com/dih5/pr6.mp4", "autoPlay":false, "autoBuffering":true}}' />
+    &lt;p>Download video as &lt;a href="pr6.mp4">MP4&lt;/a>, &lt;a href="pr6.webm">WebM&lt;/a>, or &lt;a href="pr6.ogv">Ogg&lt;/a>.&lt;/p>
+  &lt;/object>
+&lt;/video>
+&lt;script>
+  var v = document.getElementById("movie");
+  v.onclick = function() {
+    if (v.paused) {
+      v.play();
+    } else {
+      v.pause();
+    }
+  });
+&lt;/script></code></pre>
+        </section>
+      </section>
+
+      <!-- Audio-->
+      <section>
+        <h2>
+          <img src="../../images/html5-logo/html5_multimedia.svg" height="50" alt=""/>
+          Audio
+        </h2>
+        <pre><code contenteditable>
+&lt;audio controls>
+&lt;source src="music.mp3" type="audio/mpeg"/>
+&lt;source src="music.aac" type="audio/mp4" />
+&lt;source src="music.ogg" type="audio/ogg"/>
+&lt;!-- now include flash fall back -->
+&lt;/audio>
+        </code></pre>
+      </section>
+
+      <!-- Multimedia Resources-->
+      <section>
+        <h2>
+          <img src="../../images/html5-logo/html5_multimedia.svg" height="50" alt=""/>
+          Multimedia
+        </h2>
+        <p>If the dream is still far from reality, what's a dev to do?</p>
+        <p>The good news is, devs are working on it all the time</p>
+        <p><a href="http://diveintohtml5.info/video.html#" target="_blank">Video on the Web</a></p>
+        <p><a href="http://www.mirovideoconverter.com/" target="_blank">Miro Video Converter</a></p>
+        <p><a href="http://html5doctor.com/native-audio-in-the-browser/" target="_blank">Native Audio in the Browser</a></p>
+      </section>
+
+      <!-- Canvas-->
+      <section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_effects_3d.svg" height="50" alt=""/>
+            Canvas
+          </h2>
+          <ul>
+            <li>Environment for creating dynamic images</li>
+            <li>Canvas element + javascript = dynamic content!</li>
+          </ul>
+        </section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_effects_3d.svg" height="50" alt=""/>
+            Canvas
+          </h2>
+          <ul>
+            <li>
+              <a href="http://www.datapointed.net/visualizations/math/factorization/animated-diagrams/#" target="_blank">Animated Factorization</a>
+            </li>
+            <li>
+              <a href="http://bomomo.com/" target="_blank">http://bomomo.com/</a>
+            </li>
+            <li>
+              <a href="http://canvasrider.com/" target="_blank">http://canvasrider.com/</a>
+            </li>
+            <li>
+              <a href="http://lights.elliegoulding.com/" target="_blank">http://lights.elliegoulding.com/</a>
+            </li>
+      <li>
+        <a href="http://codepen.io/jackrugile/pen/DGenc" target="_blank">Codepen.io</a>
+      </li>
+          </ul>
+        </section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_effects_3d.svg" height="50" alt=""/>
+            Canvas
+          </h2>
+          <p>The first step is to add a canvas element to your HTML. Make sure you give it an id:</p>
+          <pre><code contenteditable>
+&lt;canvas id="myCanvas" width="400" height="400">
+  Your browser doesn’t support Canvas.
+&lt;/canvas>
+          </code></pre>
+          <p class="fragment">Unfortunately, everything else (all the cool stuff) is actually in JavaScript and outside the scope of this class</p>
+        </section>
+      </section>
+
+      <!-- Geo location-->
+      <section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_device_access.svg" height="50" alt=""/>
+            Device Access
+          </h2>
+          <p>Rich, device-aware features and experiences</p>
+        </section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_device_access.svg" height="50" alt=""/>
+            Geolocation
+          </h2>
+          <a href="https://maps.google.com/" target="_blank">Google Map</a>
+          <p>Browsers using HTML5 can locate you through IP addresses, WiFi connections, and GPS towers (for mobile phones and tablets)</p>
+          <p>But all the cool interactive stuff is, once again, done in JavaScript</p>
+          <p class="fragment yellow">You didn't expect HTML and CSS to do EVERYTHING, did you?</p>
+        </section>
+      </section>
+
+      <!-- Storage-->
+      <section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_offline_storage.svg" height="50" alt=""/>
+            Storage
+          </h2>
+          <p><a href="http://html5demos.com/storage" target="_blank">storage</a></p>
+          <p><a href="http://html5demos.com/storage-events" target="_blank">storage-events</a></p>
+        </section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_offline_storage.svg" height="50" alt=""/>
+            Storage
+          </h2>
+          <ul>
+            <li class="fragment">You can use HTML5 Web Storage to persist simple data.</li>
+            <li class="fragment">
+              Two kinds of HTML5 Web Storage:
+              <ul>
+                <li>SessionStorage for per-window data</li>
+                <li>LocalStorage for global, persistent data (stored to hard drive through the browser)</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_offline_storage.svg" height="50" alt=""/>
+            SessionStorage
+          </h2>
+          <ul>
+            <li class="fragment">Ever accidentally bought two of the same kind of ticket, because you were shopping the same site in multiple windows/tabs?</li>
+            <li class="fragment">Session Storage provides a good way to prevent this.</li>
+            <li class="fragment">Session Storage is not saved to the user’s hard drive</li>
+            <li class="fragment">It only lasts for the time that a browser window or tab is open and viewing a specific site.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>
+            <img src="../../images/html5-logo/html5_offline_storage.svg" height="50" alt=""/>
+            LocalStorage
+          </h2>
+          <ul>
+            <li class="fragment">With Local Storage, we can save data to the user’s computer, via the browser.</li>
+            <li class="fragment">When a user revisits a site in the same browser they first visited in, any data saved to Local Storage can be retrieved.</li>
+            <li class="fragment">Local Storage is browser-specific: Information you save while browsing with Firefox will NOT be available to Safari.</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Questions? -->
+      <section>
+        <h1>Break time!</h1>
+        <h2>Questions?</h2>
+        <div style="font-size:1000%; height:100%; margin-top:20%" class="blue">?
+        </div>
+      </section>
+
+
+
+
+
+
+
+<!-- BREAK -->
+<!-- FINAL SECTION BEGINS -->
+
+
+
+
+      <section>
+        <img src="https://s3.amazonaws.com/gdichicago-cdn/images/logo.png" alt=""/>
+        <h3>Intermediate HTML and CSS</h3>
+        <h4>Part 2 continued: CSS3 Responsive Design</h4>
+      </section>
+
+
+      <!-- Media Queries -->
+      <section>
+        <section>
+          <h2>Media Queries</h2>
+          <ul>
+            <li>Conditional style sheets</li>
+            <li>Changing specific CSS styles on different browsers based on width, device-pixel-ratio, and orientation</li>
+            <li>Called via a meta tag</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Media Queries</h2>
+          <p>A media type and at least one expression that limits the style sheets' scope by using media features, such as width, height, and color</p>
+        </section>
+        <section class="media-queries">
+          <h2>Media Queries</h2>
+          <div class="example"></div>
+          <pre><code>background-color: grey;
+@media screen and (min-width: 300px) and (max-width: 600px)
+{
+background-color: red;
+}
+@media screen and (min-width: 900px) and (max-width: 1200px)
+{
+background-color: blue;
+}</code></pre>
+          <pre class="fragment"><code>&lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;</code></pre>
+        </section>
+        <section>
+          <h2>Media Queries</h2>
+          <p>Frequently used in responsive web design</p>
+          <p><a href="http://mediaqueri.es" target="_blank">http://mediaqueri.es</a></p>
+          <p><a href="http://buildresponsively.com/" target="_blank">Example: Build Responsively</a></p>
+        </section>
+      </section>
+
+      <!-- Responsive Design -->
+      <section>
+        <section>
+          <h2>Responsive Design</h2>
+          <p>Design by thinking of the structure of your website, and how different elements fit into the structure.</p>
+        </section>
+        <section>
+          <h2>Responsive Design</h2>
+          <p class="yellow">Desktop View</p>
+          <img src="../../images/media-queries-desktop.png" style="height:500px" alt=""/>
+        </section>
+        <section>
+          <h2>Responsive Design</h2>
+          <p class="yellow">Tablet View</p>
+          <img src="../../images/media-queries-tablet.png" style="height:500px" alt=""/>
+        </section>
+        <section>
+          <h2>Responsive Design</h2>
+          <p class="yellow">Mobile View</p>
+          <img src="../../images/media-queries-phone.png" style="height:500px" alt=""/>
+        </section>
+      </section>
+
+      <!-- Responsive design + media queries -->
+      <section>
+        <section>
+          <h2>Responsive Design and Media Queries</h2>
+          <p>Most of our styling will stay the same</p>
+          <p>Colors, padding, etc.</p>
+          <p>Only change what needs to for each view</p>
+        </section>
+        <section>
+          <h2>Responsive Design and Media Queries</h2>
+          <p class="yellow">Tablet example</p>
+          <pre><code contenteditable>/** Tablet view **/
+@media screen and (max-width: 960px){
+  h1 {
+    font-size: 1.1em;
+    line-height: 40px;
+  }
+  header nav li{
+    line-height: 40px;
+  }
+}</code></pre>
+          <p class="fragment">In tablet view, we don't need the header to be so big</p>
+        </section>
+        <section>
+          <h2>Responsive Design and Media Queries</h2>
+          <p class="yellow">Mobile example</p>
+          <pre><code contenteditable>/** Mobile view **/
+@media screen and (max-width: 480px){
+  #famous article.woman {
+    float: none;
+    margin: 5px auto;
+    padding: 2%;
+    width: 80%
+  }
+}</code></pre>
+          <p class="fragment">In mobile view, we don't want the bios to float</p>
+        </section>
+      </section>
+
+      <!-- Let's Develop It-->
+      <section>
+        <section>
+          <h2>Let's Develop It</h2>
+          <p>Enhance our Women in Computing web site to use HTML5 &amp; CSS3</p>
+        </section>
+        <section>
+          <h2>Let's Develop It</h2>
+          <ul>
+            <li>Use media queries to make our site responsive</li>
+            <li>Start small</li>
+            <li>You will have a little bit more time than normal</li>
+            <li>Useful tutorial <a href="http://webdesignerwall.com/tutorials/css3-media-queries" target="_blank">CSS3 and Media Queries</a></li>
+            <li>Useful tutorial <a href="http://webdesignerwall.com/tutorials/responsive-design-in-3-steps" target="_blank">Responsive Design in 3 Easy Steps</a></li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Tools and Deployment -->
+      <section>
+        <section>
+          <h2>Tools &amp; Deployment</h2>
+          <p class="yellow">Remember that HTML5 is still new</p>
+          <p>That means we have to be aware of what each browser can do</p>
+          <p>And make sure that people don't lose functionality</p>
+        </section>
+        <section>
+          <h2><a href="http://caniuse.com/" target="_blank">Can I Use?</a></h2>
+          <img src="../../images/screenshots/caniuse-border-radius.png" alt=""/>
+        </section>
+        <section>
+          <h2><a href="http://html5readiness.com/" target="_blank">HTML5 &amp; CSS3 Readiness</a></h2>
+          <img src="../../images/screenshots/html5-css3-readiness.png" alt=""/>
+        </section>
+        <section>
+          <h2><a href="http://html5please.com/" target="_blank">HTML5 Please</a></h2>
+          <img src="../../images/screenshots/html5-please.png" alt=""/>
+        </section>
+        <section>
+          <img src="../../images/html5rocks.png" alt=""/>
+          <p>
+            <a href="http://www.html5rocks.com" target="_blank">http://www.html5rocks.com</a>
+          </p>
+        </section>
+        <section>
+          <img src="../../images/Mozilla-Developer-Network.png" alt=""/>
+          <p>
+            <a href="https://developer.mozilla.org" target="_blank">https://developer.mozilla.org</a>
+          </p>
+        </section>
+        <section>
+          <img src="../../images/html5doctor.png" alt=""/>
+          <p>
+            <a href="http://html5doctor.com" target="_blank">http://html5doctor.com</a>
+          </p>
+        </section>
+        <section>
+          <h2>
+            <a href="http://code.google.com/p/html5shiv/" target="_blank">HTML5Shiv</a>
+          </h2>
+          <p>HTML5 IE enabling script</p>
+        </section>
+        <section>
+          <a href="http://modernizr.com/" target="_blank">
+            <img src="../../images/modernizr.png" alt=""/>
+          </a>
+          <ul>
+            <li>JavaScript library that detects HTML5 and CSS3 features in the user’s browser</li>
+            <li>Works well with polyfills - a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively</li>
+            <li>A lot of the code is in JavaScript, but you can look here for how <a href="http://modernizr.com/docs/#features-css" target="_blank" >Modernizr helps with CSS</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>
+            <a href="http://html5boilerplate.com/" target="_blank">
+              <img src="../../images/html5-boilerplate.png" alt=""/>
+            </a>
+          </h2>
+          <ul>
+            <li>Boilerplate to help you get started</li>
+            <li>
+              Includes:
+              <ul>
+                <li>jQuery</li>
+                <li>Modernizr</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>
+            <a href="http://www.initializr.com/" target="_blank">
+              <img src="../../images/initializr.png" alt=""/>
+            </a>
+          </h2>
+          <ul>
+            <li>HTML5 templates generator to help you get started with a new project based on HTML5 Boilerplate</li>
+            <li>It generates for you a clean customizable template with just what you need to start!</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Let's Develop It-->
+      <section>
+        <section>
+          <h2>Let's Develop It</h2>
+          <ul>
+            <li>Look through the HTML5 tools in the previous section and try to update our site to work with older browsers</li>
+            <li>
+              Stuck or want something new?
+              <ul>
+                <li>Use <a href="http://www.initializr.com/" target="_blank">Initializr</a> to create your own blank template</li>
+                <li>Look at the structure of the HTML and CSS to learn new ways of building a site structure</li>
+                <li>Use all your knowledge from the past classes to begin building something uniquely yours!</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Questions? -->
+      <section>
+        <h2>Questions?</h2>
+        <div style="font-size:1000%; height:100%; margin-top:20%" class="blue">?
+        </div>
+      </section>
+
+
+      
+
+
+
+
+    </div>
+      <footer>
+        <div class="copyright">
+          Intermediate HTML/CSS ~ Girl Develop It ~
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+    </div>
+
+
+    <script src="https://s3.amazonaws.com/gdichicago-cdn/reveal.js/lib/js/head.min.js"></script>
+    <script src="https://s3.amazonaws.com/gdichicago-cdn/reveal.js/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'https://s3.amazonaws.com/gdichicago-cdn/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://s3.amazonaws.com/gdichicago-cdn/reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://s3.amazonaws.com/gdichicago-cdn/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://s3.amazonaws.com/gdichicago-cdn/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'https://s3.amazonaws.com/gdichicago-cdn/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'https://s3.amazonaws.com/gdichicago-cdn/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
